@@ -43,7 +43,6 @@
             button2 = new Button();
             button1 = new Button();
             panel3 = new Panel();
-            panel5 = new Panel();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -273,19 +272,11 @@
             panel3.Size = new Size(0, 0);
             panel3.TabIndex = 2;
             // 
-            // panel5
-            // 
-            panel5.Location = new Point(215, 45);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(1085, 571);
-            panel5.TabIndex = 3;
-            // 
             // FormPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1300, 618);
-            Controls.Add(panel5);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
@@ -318,6 +309,5 @@
         private PictureBox pictureBox1;
         private Panel panel3;
         private Panel panel4;
-        private Panel panel5;
     }
 }
