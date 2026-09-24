@@ -35,15 +35,15 @@
             textBox4 = new TextBox();
             label5 = new Label();
             textBox3 = new TextBox();
-            button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
-            button5 = new Button();
             label3 = new Label();
             textBox2 = new TextBox();
             label2 = new Label();
             textBox1 = new TextBox();
             label1 = new Label();
+            btn_limpiar = new Button();
+            btn_eliminar = new Button();
+            btn_editar = new Button();
+            btn_agregar = new Button();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel1.SuspendLayout();
@@ -82,13 +82,13 @@
             // panel1
             // 
             panel1.BackColor = Color.White;
+            panel1.Controls.Add(btn_limpiar);
             panel1.Controls.Add(textBox4);
+            panel1.Controls.Add(btn_eliminar);
             panel1.Controls.Add(label5);
+            panel1.Controls.Add(btn_editar);
             panel1.Controls.Add(textBox3);
-            panel1.Controls.Add(button3);
-            panel1.Controls.Add(button2);
-            panel1.Controls.Add(button1);
-            panel1.Controls.Add(button5);
+            panel1.Controls.Add(btn_agregar);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(textBox2);
             panel1.Controls.Add(label2);
@@ -124,86 +124,6 @@
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(325, 32);
             textBox3.TabIndex = 17;
-            // 
-            // button3
-            // 
-            button3.BackColor = Color.FromArgb(0, 115, 209);
-            button3.Cursor = Cursors.Hand;
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatAppearance.MouseDownBackColor = Color.FromArgb(2, 100, 181);
-            button3.FlatAppearance.MouseOverBackColor = Color.FromArgb(2, 100, 181);
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            button3.ForeColor = Color.White;
-            button3.Image = Properties.Resources.icono_limpiar;
-            button3.ImageAlign = ContentAlignment.MiddleLeft;
-            button3.Location = new Point(184, 481);
-            button3.Name = "button3";
-            button3.Padding = new Padding(14, 0, 0, 0);
-            button3.Size = new Size(155, 49);
-            button3.TabIndex = 16;
-            button3.Text = "Limpiar";
-            button3.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.FromArgb(0, 115, 209);
-            button2.Cursor = Cursors.Hand;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatAppearance.MouseDownBackColor = Color.FromArgb(2, 100, 181);
-            button2.FlatAppearance.MouseOverBackColor = Color.FromArgb(2, 100, 181);
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            button2.ForeColor = Color.White;
-            button2.Image = Properties.Resources.icono_borrar;
-            button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(14, 481);
-            button2.Name = "button2";
-            button2.Padding = new Padding(14, 0, 0, 0);
-            button2.Size = new Size(155, 49);
-            button2.TabIndex = 15;
-            button2.Text = "Eliminar";
-            button2.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.FromArgb(0, 115, 209);
-            button1.Cursor = Cursors.Hand;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(2, 100, 181);
-            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(2, 100, 181);
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            button1.ForeColor = Color.White;
-            button1.Image = Properties.Resources.icono_editar3;
-            button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(184, 410);
-            button1.Name = "button1";
-            button1.Padding = new Padding(14, 0, 0, 0);
-            button1.Size = new Size(155, 49);
-            button1.TabIndex = 14;
-            button1.Text = "Editar";
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            button5.BackColor = Color.FromArgb(0, 115, 209);
-            button5.Cursor = Cursors.Hand;
-            button5.FlatAppearance.BorderSize = 0;
-            button5.FlatAppearance.MouseDownBackColor = Color.FromArgb(2, 100, 181);
-            button5.FlatAppearance.MouseOverBackColor = Color.FromArgb(2, 100, 181);
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            button5.ForeColor = Color.White;
-            button5.Image = Properties.Resources.icono_agregar;
-            button5.ImageAlign = ContentAlignment.MiddleLeft;
-            button5.Location = new Point(14, 410);
-            button5.Name = "button5";
-            button5.Padding = new Padding(14, 0, 0, 0);
-            button5.Size = new Size(155, 49);
-            button5.TabIndex = 13;
-            button5.Text = "Agregar";
-            button5.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -251,6 +171,86 @@
             label1.TabIndex = 0;
             label1.Text = "Nombre de Cliente";
             // 
+            // btn_limpiar
+            // 
+            btn_limpiar.BackColor = Color.FromArgb(0, 115, 209);
+            btn_limpiar.Cursor = Cursors.Hand;
+            btn_limpiar.FlatAppearance.BorderSize = 0;
+            btn_limpiar.FlatAppearance.MouseDownBackColor = Color.FromArgb(2, 100, 181);
+            btn_limpiar.FlatAppearance.MouseOverBackColor = Color.FromArgb(2, 100, 181);
+            btn_limpiar.FlatStyle = FlatStyle.Flat;
+            btn_limpiar.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            btn_limpiar.ForeColor = Color.White;
+            btn_limpiar.Image = Properties.Resources.icono_limpiar;
+            btn_limpiar.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_limpiar.Location = new Point(184, 481);
+            btn_limpiar.Name = "btn_limpiar";
+            btn_limpiar.Padding = new Padding(14, 0, 0, 0);
+            btn_limpiar.Size = new Size(155, 49);
+            btn_limpiar.TabIndex = 20;
+            btn_limpiar.Text = "Limpiar";
+            btn_limpiar.UseVisualStyleBackColor = false;
+            // 
+            // btn_eliminar
+            // 
+            btn_eliminar.BackColor = Color.FromArgb(0, 115, 209);
+            btn_eliminar.Cursor = Cursors.Hand;
+            btn_eliminar.FlatAppearance.BorderSize = 0;
+            btn_eliminar.FlatAppearance.MouseDownBackColor = Color.FromArgb(2, 100, 181);
+            btn_eliminar.FlatAppearance.MouseOverBackColor = Color.FromArgb(2, 100, 181);
+            btn_eliminar.FlatStyle = FlatStyle.Flat;
+            btn_eliminar.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            btn_eliminar.ForeColor = Color.White;
+            btn_eliminar.Image = Properties.Resources.icono_borrar;
+            btn_eliminar.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_eliminar.Location = new Point(14, 481);
+            btn_eliminar.Name = "btn_eliminar";
+            btn_eliminar.Padding = new Padding(14, 0, 0, 0);
+            btn_eliminar.Size = new Size(155, 49);
+            btn_eliminar.TabIndex = 19;
+            btn_eliminar.Text = "Eliminar";
+            btn_eliminar.UseVisualStyleBackColor = false;
+            // 
+            // btn_editar
+            // 
+            btn_editar.BackColor = Color.FromArgb(0, 115, 209);
+            btn_editar.Cursor = Cursors.Hand;
+            btn_editar.FlatAppearance.BorderSize = 0;
+            btn_editar.FlatAppearance.MouseDownBackColor = Color.FromArgb(2, 100, 181);
+            btn_editar.FlatAppearance.MouseOverBackColor = Color.FromArgb(2, 100, 181);
+            btn_editar.FlatStyle = FlatStyle.Flat;
+            btn_editar.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            btn_editar.ForeColor = Color.White;
+            btn_editar.Image = Properties.Resources.icono_editar3;
+            btn_editar.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_editar.Location = new Point(184, 410);
+            btn_editar.Name = "btn_editar";
+            btn_editar.Padding = new Padding(14, 0, 0, 0);
+            btn_editar.Size = new Size(155, 49);
+            btn_editar.TabIndex = 18;
+            btn_editar.Text = "Editar";
+            btn_editar.UseVisualStyleBackColor = false;
+            // 
+            // btn_agregar
+            // 
+            btn_agregar.BackColor = Color.FromArgb(0, 115, 209);
+            btn_agregar.Cursor = Cursors.Hand;
+            btn_agregar.FlatAppearance.BorderSize = 0;
+            btn_agregar.FlatAppearance.MouseDownBackColor = Color.FromArgb(2, 100, 181);
+            btn_agregar.FlatAppearance.MouseOverBackColor = Color.FromArgb(2, 100, 181);
+            btn_agregar.FlatStyle = FlatStyle.Flat;
+            btn_agregar.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            btn_agregar.ForeColor = Color.White;
+            btn_agregar.Image = Properties.Resources.icono_agregar;
+            btn_agregar.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_agregar.Location = new Point(14, 410);
+            btn_agregar.Name = "btn_agregar";
+            btn_agregar.Padding = new Padding(14, 0, 0, 0);
+            btn_agregar.Size = new Size(155, 49);
+            btn_agregar.TabIndex = 17;
+            btn_agregar.Text = "Agregar";
+            btn_agregar.UseVisualStyleBackColor = false;
+            // 
             // AdminAgregarClientes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -275,10 +275,6 @@
         private Label label4;
         private DataGridView dataGridView1;
         private Panel panel1;
-        private Button button3;
-        private Button button2;
-        private Button button1;
-        private Button button5;
         private Label label3;
         private TextBox textBox2;
         private Label label2;
@@ -287,5 +283,9 @@
         private TextBox textBox4;
         private Label label5;
         private TextBox textBox3;
+        private Button btn_limpiar;
+        private Button btn_eliminar;
+        private Button btn_editar;
+        private Button btn_agregar;
     }
 }

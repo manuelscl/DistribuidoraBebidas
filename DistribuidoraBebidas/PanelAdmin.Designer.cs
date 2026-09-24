@@ -68,9 +68,9 @@
             panel1.Controls.Add(panel3);
             panel1.Controls.Add(panel5);
             panel1.Controls.Add(panel2);
-            panel1.Location = new Point(21, 20);
+            panel1.Location = new Point(11, 12);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1110, 237);
+            panel1.Size = new Size(1061, 237);
             panel1.TabIndex = 0;
             // 
             // panel4
@@ -79,7 +79,7 @@
             panel4.Controls.Add(label5);
             panel4.Controls.Add(label6);
             panel4.Controls.Add(pictureBox3);
-            panel4.Location = new Point(841, 26);
+            panel4.Location = new Point(813, 26);
             panel4.Name = "panel4";
             panel4.Size = new Size(232, 186);
             panel4.TabIndex = 5;
@@ -121,7 +121,7 @@
             panel3.Controls.Add(label3);
             panel3.Controls.Add(label4);
             panel3.Controls.Add(pictureBox2);
-            panel3.Location = new Point(298, 26);
+            panel3.Location = new Point(279, 26);
             panel3.Name = "panel3";
             panel3.Size = new Size(232, 186);
             panel3.TabIndex = 3;
@@ -163,7 +163,7 @@
             panel5.Controls.Add(label7);
             panel5.Controls.Add(label8);
             panel5.Controls.Add(pictureBox4);
-            panel5.Location = new Point(570, 26);
+            panel5.Location = new Point(546, 26);
             panel5.Name = "panel5";
             panel5.Size = new Size(232, 186);
             panel5.TabIndex = 4;
@@ -205,7 +205,7 @@
             panel2.Controls.Add(label2);
             panel2.Controls.Add(label1);
             panel2.Controls.Add(pictureBox1);
-            panel2.Location = new Point(31, 26);
+            panel2.Location = new Point(17, 26);
             panel2.Name = "panel2";
             panel2.Size = new Size(232, 186);
             panel2.TabIndex = 0;
@@ -243,10 +243,11 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.BackgroundColor = SystemColors.GradientActiveCaption;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(31, 56);
+            dataGridView1.Location = new Point(17, 56);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(1042, 348);
+            dataGridView1.Size = new Size(1028, 220);
             dataGridView1.TabIndex = 1;
             // 
             // panel6
@@ -254,16 +255,16 @@
             panel6.BackColor = Color.White;
             panel6.Controls.Add(label9);
             panel6.Controls.Add(dataGridView1);
-            panel6.Location = new Point(21, 297);
+            panel6.Location = new Point(11, 263);
             panel6.Name = "panel6";
-            panel6.Size = new Size(1110, 433);
+            panel6.Size = new Size(1061, 298);
             panel6.TabIndex = 6;
             // 
             // label9
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(31, 18);
+            label9.Location = new Point(17, 16);
             label9.Name = "label9";
             label9.Size = new Size(150, 25);
             label9.TabIndex = 8;
@@ -276,7 +277,7 @@
             Controls.Add(panel6);
             Controls.Add(panel1);
             Name = "PanelAdmin";
-            Size = new Size(1153, 756);
+            Size = new Size(1085, 573);
             panel1.ResumeLayout(false);
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
