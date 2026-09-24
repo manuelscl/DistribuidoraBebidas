@@ -43,7 +43,7 @@
             button2 = new Button();
             button1 = new Button();
             panel3 = new Panel();
-            panelAdmin1 = new PanelAdmin();
+            panel5 = new Panel();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -56,7 +56,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1355, 45);
+            panel1.Size = new Size(1300, 45);
             panel1.TabIndex = 0;
             // 
             // btn_cerrar
@@ -69,7 +69,7 @@
             btn_cerrar.FlatStyle = FlatStyle.Flat;
             btn_cerrar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_cerrar.ForeColor = Color.White;
-            btn_cerrar.Location = new Point(1304, 8);
+            btn_cerrar.Location = new Point(1249, 9);
             btn_cerrar.Name = "btn_cerrar";
             btn_cerrar.Size = new Size(39, 29);
             btn_cerrar.TabIndex = 8;
@@ -103,7 +103,7 @@
             panel2.Dock = DockStyle.Left;
             panel2.Location = new Point(0, 45);
             panel2.Name = "panel2";
-            panel2.Size = new Size(214, 756);
+            panel2.Size = new Size(214, 573);
             panel2.TabIndex = 1;
             // 
             // panel4
@@ -121,11 +121,11 @@
             btn_cerrarSesion.FlatAppearance.MouseDownBackColor = Color.FromArgb(2, 100, 181);
             btn_cerrarSesion.FlatAppearance.MouseOverBackColor = Color.FromArgb(2, 100, 181);
             btn_cerrarSesion.FlatStyle = FlatStyle.Flat;
-            btn_cerrarSesion.Font = new Font("Segoe UI", 14F);
+            btn_cerrarSesion.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             btn_cerrarSesion.ForeColor = Color.White;
             btn_cerrarSesion.Image = Properties.Resources.cierre_de_sesion_de_usuario;
             btn_cerrarSesion.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_cerrarSesion.Location = new Point(10, 695);
+            btn_cerrarSesion.Location = new Point(12, 504);
             btn_cerrarSesion.Name = "btn_cerrarSesion";
             btn_cerrarSesion.Padding = new Padding(15, 0, 0, 0);
             btn_cerrarSesion.Size = new Size(187, 49);
@@ -141,11 +141,11 @@
             button5.FlatAppearance.MouseDownBackColor = Color.FromArgb(2, 100, 181);
             button5.FlatAppearance.MouseOverBackColor = Color.FromArgb(2, 100, 181);
             button5.FlatStyle = FlatStyle.Flat;
-            button5.Font = new Font("Segoe UI", 14F);
+            button5.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             button5.ForeColor = Color.White;
             button5.Image = Properties.Resources.factura_punto_de_venta;
             button5.ImageAlign = ContentAlignment.MiddleLeft;
-            button5.Location = new Point(0, 449);
+            button5.Location = new Point(3, 425);
             button5.Name = "button5";
             button5.Padding = new Padding(15, 0, 5, 0);
             button5.Size = new Size(211, 49);
@@ -161,11 +161,11 @@
             button4.FlatAppearance.MouseDownBackColor = Color.FromArgb(2, 100, 181);
             button4.FlatAppearance.MouseOverBackColor = Color.FromArgb(2, 100, 181);
             button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Segoe UI", 14F);
+            button4.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             button4.ForeColor = Color.White;
             button4.Image = Properties.Resources.etiquetas;
             button4.ImageAlign = ContentAlignment.MiddleLeft;
-            button4.Location = new Point(0, 394);
+            button4.Location = new Point(0, 370);
             button4.Name = "button4";
             button4.Padding = new Padding(15, 0, 5, 0);
             button4.Size = new Size(211, 49);
@@ -184,7 +184,6 @@
             label3.Size = new Size(71, 25);
             label3.TabIndex = 10;
             label3.Text = "Admin";
-            label3.Click += label3_Click;
             // 
             // label2
             // 
@@ -214,11 +213,11 @@
             button3.FlatAppearance.MouseDownBackColor = Color.FromArgb(2, 100, 181);
             button3.FlatAppearance.MouseOverBackColor = Color.FromArgb(2, 100, 181);
             button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Segoe UI", 14F);
+            button3.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             button3.ForeColor = Color.White;
             button3.Image = Properties.Resources.cajas;
             button3.ImageAlign = ContentAlignment.MiddleLeft;
-            button3.Location = new Point(0, 339);
+            button3.Location = new Point(0, 315);
             button3.Name = "button3";
             button3.Padding = new Padding(15, 0, 5, 0);
             button3.Size = new Size(211, 49);
@@ -234,11 +233,11 @@
             button2.FlatAppearance.MouseDownBackColor = Color.FromArgb(2, 100, 181);
             button2.FlatAppearance.MouseOverBackColor = Color.FromArgb(2, 100, 181);
             button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Segoe UI", 14F);
+            button2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             button2.ForeColor = Color.White;
             button2.Image = Properties.Resources.usuarios;
             button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(0, 284);
+            button2.Location = new Point(0, 260);
             button2.Name = "button2";
             button2.Padding = new Padding(15, 0, 5, 0);
             button2.Size = new Size(211, 49);
@@ -254,11 +253,11 @@
             button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(2, 100, 181);
             button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(2, 100, 181);
             button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI", 14F);
+            button1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             button1.ForeColor = Color.White;
             button1.Image = Properties.Resources.icono_inicio;
             button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(0, 229);
+            button1.Location = new Point(0, 205);
             button1.Name = "button1";
             button1.Padding = new Padding(15, 0, 5, 0);
             button1.Size = new Size(211, 49);
@@ -274,19 +273,19 @@
             panel3.Size = new Size(0, 0);
             panel3.TabIndex = 2;
             // 
-            // panelAdmin1
+            // panel5
             // 
-            panelAdmin1.Location = new Point(203, 45);
-            panelAdmin1.Name = "panelAdmin1";
-            panelAdmin1.Size = new Size(1153, 756);
-            panelAdmin1.TabIndex = 3;
+            panel5.Location = new Point(215, 45);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(1085, 571);
+            panel5.TabIndex = 3;
             // 
             // FormPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1355, 801);
-            Controls.Add(panelAdmin1);
+            ClientSize = new Size(1300, 618);
+            Controls.Add(panel5);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
@@ -319,6 +318,6 @@
         private PictureBox pictureBox1;
         private Panel panel3;
         private Panel panel4;
-        private PanelAdmin panelAdmin1;
+        private Panel panel5;
     }
 }

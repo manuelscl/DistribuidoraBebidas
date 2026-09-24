@@ -17,7 +17,7 @@ namespace DistribuidoraBebidas
 
         private void btn_cerrar_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Are you sure you want to exit?", "Confirmation Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show("¿Estas seguro de cerrar sesion?", "Confirmation Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 Application.Exit();
             }
@@ -32,10 +32,6 @@ namespace DistribuidoraBebidas
                 this.Hide();
             }
         }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
     }
+
 }

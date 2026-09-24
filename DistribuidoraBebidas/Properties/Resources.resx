@@ -121,11 +121,14 @@
   <data name="dolar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dolar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icono_agregar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\icono_agregar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icono_salir" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icono_salir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="divisa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\divisa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icono_editar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\icono_editar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="padlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\padlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,11 +145,17 @@
   <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="username-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\username-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icono_agregar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\icono_agregar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icono_inicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icono_inicio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono_borrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\icono_borrar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="divisa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\divisa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="silueta-de-multiples-usuarios-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\silueta-de-multiples-usuarios-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,10 +163,22 @@
   <data name="usuarios" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\usuarios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cierre-de-sesion-de-usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cierre-de-sesion-de-usuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono_editar2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\icono_editar2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono_editar3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\icono_editar3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="username-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\username-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cajas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cajas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cierre-de-sesion-de-usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cierre-de-sesion-de-usuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icono_limpiar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\icono_limpiar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
