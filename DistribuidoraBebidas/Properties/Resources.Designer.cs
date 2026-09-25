@@ -173,6 +173,16 @@ namespace DistribuidoraBebidas.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icono_clientes {
+            get {
+                object obj = ResourceManager.GetObject("icono_clientes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icono_editar {
             get {
                 object obj = ResourceManager.GetObject("icono_editar", resourceCulture);

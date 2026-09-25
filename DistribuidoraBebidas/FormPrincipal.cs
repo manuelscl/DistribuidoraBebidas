@@ -32,6 +32,31 @@ namespace DistribuidoraBebidas
                 this.Hide();
             }
         }
+
+        private void btnInicio_Click(object sender, EventArgs e)
+        {
+            panelAdmin1.Visible = true;
+            adminUsuarios1.Visible = false;
+            adminAgregarClientes1.Visible = false;
+        }
+
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+            panelAdmin1.Visible = false;
+            adminUsuarios1.Visible = true;
+            adminAgregarClientes1.Visible = false;
+            AdminUsuarios form = adminUsuarios1 as AdminUsuarios;
+            if (form != null) { form.CargarDatosTabla(); }
+        }
+
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            panelAdmin1.Visible = false;
+            adminUsuarios1.Visible = false;
+            adminAgregarClientes1.Visible = true;
+            AdminAgregarClientes form = adminAgregarClientes1 as AdminAgregarClientes;
+            if (form != null) { form.CargarDatosTabla(); }
+        }
     }
 
 }

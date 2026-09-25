@@ -28,71 +28,99 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
             panel2 = new Panel();
+            dgvClientes = new DataGridView();
             label4 = new Label();
-            dataGridView1 = new DataGridView();
             panel1 = new Panel();
             btn_limpiar = new Button();
-            textBox4 = new TextBox();
+            direccionCliente = new TextBox();
             btn_eliminar = new Button();
             label5 = new Label();
             btn_editar = new Button();
-            textBox3 = new TextBox();
+            telefonoCliente = new TextBox();
             btn_agregar = new Button();
             label3 = new Label();
-            textBox2 = new TextBox();
+            cedulaCliente = new TextBox();
             label2 = new Label();
-            textBox1 = new TextBox();
+            nombreCliente = new TextBox();
             label1 = new Label();
             panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvClientes).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel2
             // 
             panel2.BackColor = Color.White;
+            panel2.Controls.Add(dgvClientes);
             panel2.Controls.Add(label4);
-            panel2.Controls.Add(dataGridView1);
             panel2.Location = new Point(372, 14);
             panel2.Name = "panel2";
             panel2.Size = new Size(696, 638);
             panel2.TabIndex = 3;
             // 
+            // dgvClientes
+            // 
+            dgvClientes.AllowUserToAddRows = false;
+            dgvClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvClientes.BackgroundColor = SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = Color.FromArgb(232, 232, 232);
+            dataGridViewCellStyle4.Font = new Font("Segoe UI", 10F);
+            dataGridViewCellStyle4.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
+            dgvClientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dgvClientes.ColumnHeadersHeight = 40;
+            dgvClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = Color.White;
+            dataGridViewCellStyle5.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle5.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.False;
+            dgvClientes.DefaultCellStyle = dataGridViewCellStyle5;
+            dgvClientes.EnableHeadersVisualStyles = false;
+            dgvClientes.Location = new Point(18, 51);
+            dgvClientes.Name = "dgvClientes";
+            dgvClientes.ReadOnly = true;
+            dgvClientes.RowHeadersVisible = false;
+            dgvClientes.RowHeadersWidth = 62;
+            dataGridViewCellStyle6.BackColor = Color.White;
+            dgvClientes.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dgvClientes.Size = new Size(660, 573);
+            dgvClientes.TabIndex = 19;
+            dgvClientes.CellClick += dgvClientes_CellClick;
+            // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            label4.Location = new Point(18, 13);
+            label4.Location = new Point(18, 17);
             label4.Name = "label4";
             label4.Size = new Size(194, 25);
             label4.TabIndex = 18;
             label4.Text = "Datos de los Clientes";
             // 
-            // dataGridView1
-            // 
-            dataGridView1.BackgroundColor = SystemColors.GradientActiveCaption;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(18, 41);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(656, 583);
-            dataGridView1.TabIndex = 0;
-            // 
             // panel1
             // 
             panel1.BackColor = Color.White;
             panel1.Controls.Add(btn_limpiar);
-            panel1.Controls.Add(textBox4);
+            panel1.Controls.Add(direccionCliente);
             panel1.Controls.Add(btn_eliminar);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(btn_editar);
-            panel1.Controls.Add(textBox3);
+            panel1.Controls.Add(telefonoCliente);
             panel1.Controls.Add(btn_agregar);
             panel1.Controls.Add(label3);
-            panel1.Controls.Add(textBox2);
+            panel1.Controls.Add(cedulaCliente);
             panel1.Controls.Add(label2);
-            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(nombreCliente);
             panel1.Controls.Add(label1);
             panel1.Location = new Point(14, 14);
             panel1.Name = "panel1";
@@ -118,14 +146,15 @@
             btn_limpiar.TabIndex = 20;
             btn_limpiar.Text = "Limpiar";
             btn_limpiar.UseVisualStyleBackColor = false;
+            btn_limpiar.Click += btnLimpiar_Click;
             // 
-            // textBox4
+            // direccionCliente
             // 
-            textBox4.Font = new Font("Segoe UI", 14F);
-            textBox4.Location = new Point(14, 346);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(325, 32);
-            textBox4.TabIndex = 19;
+            direccionCliente.Font = new Font("Segoe UI", 14F);
+            direccionCliente.Location = new Point(14, 353);
+            direccionCliente.Name = "direccionCliente";
+            direccionCliente.Size = new Size(325, 32);
+            direccionCliente.TabIndex = 19;
             // 
             // btn_eliminar
             // 
@@ -146,16 +175,17 @@
             btn_eliminar.TabIndex = 19;
             btn_eliminar.Text = "Eliminar";
             btn_eliminar.UseVisualStyleBackColor = false;
+            btn_eliminar.Click += btnEliminar_Click;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            label5.Location = new Point(14, 313);
+            label5.Location = new Point(14, 320);
             label5.Name = "label5";
-            label5.Size = new Size(89, 25);
+            label5.Size = new Size(96, 25);
             label5.TabIndex = 18;
-            label5.Text = "Teléfono";
+            label5.Text = "Dirección";
             // 
             // btn_editar
             // 
@@ -176,14 +206,15 @@
             btn_editar.TabIndex = 18;
             btn_editar.Text = "Editar";
             btn_editar.UseVisualStyleBackColor = false;
+            btn_editar.Click += btnEditar_Click;
             // 
-            // textBox3
+            // telefonoCliente
             // 
-            textBox3.Font = new Font("Segoe UI", 14F);
-            textBox3.Location = new Point(14, 238);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(325, 32);
-            textBox3.TabIndex = 17;
+            telefonoCliente.Font = new Font("Segoe UI", 14F);
+            telefonoCliente.Location = new Point(14, 246);
+            telefonoCliente.Name = "telefonoCliente";
+            telefonoCliente.Size = new Size(325, 32);
+            telefonoCliente.TabIndex = 17;
             // 
             // btn_agregar
             // 
@@ -204,48 +235,49 @@
             btn_agregar.TabIndex = 17;
             btn_agregar.Text = "Agregar";
             btn_agregar.UseVisualStyleBackColor = false;
+            btn_agregar.Click += btnAgregar_Click;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            label3.Location = new Point(14, 205);
+            label3.Location = new Point(14, 213);
             label3.Name = "label3";
-            label3.Size = new Size(73, 25);
+            label3.Size = new Size(89, 25);
             label3.TabIndex = 4;
-            label3.Text = "Cédula";
+            label3.Text = "Teléfono";
             // 
-            // textBox2
+            // cedulaCliente
             // 
-            textBox2.Font = new Font("Segoe UI", 14F);
-            textBox2.Location = new Point(14, 135);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(325, 32);
-            textBox2.TabIndex = 3;
+            cedulaCliente.Font = new Font("Segoe UI", 14F);
+            cedulaCliente.Location = new Point(14, 148);
+            cedulaCliente.Name = "cedulaCliente";
+            cedulaCliente.Size = new Size(325, 32);
+            cedulaCliente.TabIndex = 3;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            label2.Location = new Point(14, 102);
+            label2.Location = new Point(14, 115);
             label2.Name = "label2";
-            label2.Size = new Size(113, 25);
+            label2.Size = new Size(73, 25);
             label2.TabIndex = 2;
-            label2.Text = "Contraseña";
+            label2.Text = "Cédula";
             // 
-            // textBox1
+            // nombreCliente
             // 
-            textBox1.Font = new Font("Segoe UI", 14F);
-            textBox1.Location = new Point(14, 42);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(325, 32);
-            textBox1.TabIndex = 1;
+            nombreCliente.Font = new Font("Segoe UI", 14F);
+            nombreCliente.Location = new Point(14, 51);
+            nombreCliente.Name = "nombreCliente";
+            nombreCliente.Size = new Size(325, 32);
+            nombreCliente.TabIndex = 1;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            label1.Location = new Point(14, 13);
+            label1.Location = new Point(14, 17);
             label1.Name = "label1";
             label1.Size = new Size(179, 25);
             label1.TabIndex = 0;
@@ -263,7 +295,7 @@
             Size = new Size(1085, 665);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvClientes).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
@@ -273,19 +305,19 @@
 
         private Panel panel2;
         private Label label4;
-        private DataGridView dataGridView1;
         private Panel panel1;
         private Label label3;
-        private TextBox textBox2;
+        private TextBox cedulaCliente;
         private Label label2;
-        private TextBox textBox1;
+        private TextBox nombreCliente;
         private Label label1;
-        private TextBox textBox4;
+        private TextBox direccionCliente;
         private Label label5;
-        private TextBox textBox3;
+        private TextBox telefonoCliente;
         private Button btn_limpiar;
         private Button btn_eliminar;
         private Button btn_editar;
         private Button btn_agregar;
+        private DataGridView dgvClientes;
     }
 }
