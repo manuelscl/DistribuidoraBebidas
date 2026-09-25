@@ -113,9 +113,29 @@ namespace DistribuidoraBebidas.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap etiquetas1 {
+            get {
+                object obj = ResourceManager.GetObject("etiquetas1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap factura_punto_de_venta {
             get {
                 object obj = ResourceManager.GetObject("factura-punto-de-venta", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap factura_punto_de_venta1 {
+            get {
+                object obj = ResourceManager.GetObject("factura-punto-de-venta1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -206,6 +226,46 @@ namespace DistribuidoraBebidas.Properties {
         internal static System.Drawing.Bitmap icono_salir {
             get {
                 object obj = ResourceManager.GetObject("icono_salir", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icono_ventaDetalle {
+            get {
+                object obj = ResourceManager.GetObject("icono_ventaDetalle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icono_ventaDetalle1 {
+            get {
+                object obj = ResourceManager.GetObject("icono_ventaDetalle1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_bebidas_eli {
+            get {
+                object obj = ResourceManager.GetObject("logo-bebidas-eli", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_bebidas_eli_vf {
+            get {
+                object obj = ResourceManager.GetObject("logo-bebidas-eli-vf", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

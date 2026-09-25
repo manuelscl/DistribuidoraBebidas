@@ -124,6 +124,15 @@
   <data name="icono_agregar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\icono_agregar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icono_ventaDetalle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono_ventaDetalle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="usuarios" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\usuarios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo-bebidas-eli" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\logo-bebidas-eli.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icono_salir" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icono_salir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -136,8 +145,8 @@
   <data name="silueta-de-grupo-de-usuarios" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\silueta-de-grupo-de-usuarios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="factura-punto-de-venta" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\factura-punto-de-venta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icono_limpiar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\icono_limpiar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="etiquetas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\etiquetas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,8 +154,11 @@
   <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icono_agregar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icono_agregar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="factura-punto-de-venta1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\factura-punto-de-venta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cajas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cajas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icono_inicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icono_inicio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,17 +166,23 @@
   <data name="icono_borrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\icono_borrar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="divisa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\divisa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icono_agregar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\icono_agregar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="etiquetas1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\etiquetas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="silueta-de-multiples-usuarios-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\silueta-de-multiples-usuarios-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="usuarios" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\usuarios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="factura-punto-de-venta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\factura-punto-de-venta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cierre-de-sesion-de-usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cierre-de-sesion-de-usuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono_ventaDetalle1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\icono_ventaDetalle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icono_editar2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\icono_editar2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,10 +193,10 @@
   <data name="username-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\username-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cajas" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cajas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="divisa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\divisa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icono_limpiar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\icono_limpiar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logo-bebidas-eli-vf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\logo-bebidas-eli-vf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

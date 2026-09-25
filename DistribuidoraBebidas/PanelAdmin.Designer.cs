@@ -247,7 +247,7 @@
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(17, 56);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(1028, 220);
+            dataGridView1.Size = new Size(1028, 312);
             dataGridView1.TabIndex = 1;
             // 
             // panel6
@@ -257,7 +257,7 @@
             panel6.Controls.Add(dataGridView1);
             panel6.Location = new Point(11, 263);
             panel6.Name = "panel6";
-            panel6.Size = new Size(1061, 298);
+            panel6.Size = new Size(1061, 390);
             panel6.TabIndex = 6;
             // 
             // label9
@@ -277,7 +277,7 @@
             Controls.Add(panel6);
             Controls.Add(panel1);
             Name = "PanelAdmin";
-            Size = new Size(1085, 573);
+            Size = new Size(1085, 665);
             panel1.ResumeLayout(false);
             panel4.ResumeLayout(false);
             panel4.PerformLayout();

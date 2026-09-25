@@ -43,6 +43,7 @@
             button2 = new Button();
             button1 = new Button();
             panel3 = new Panel();
+            button6 = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -89,6 +90,7 @@
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(0, 115, 209);
+            panel2.Controls.Add(button6);
             panel2.Controls.Add(panel4);
             panel2.Controls.Add(btn_cerrarSesion);
             panel2.Controls.Add(button5);
@@ -102,7 +104,7 @@
             panel2.Dock = DockStyle.Left;
             panel2.Location = new Point(0, 45);
             panel2.Name = "panel2";
-            panel2.Size = new Size(214, 573);
+            panel2.Size = new Size(214, 665);
             panel2.TabIndex = 1;
             // 
             // panel4
@@ -124,9 +126,9 @@
             btn_cerrarSesion.ForeColor = Color.White;
             btn_cerrarSesion.Image = Properties.Resources.cierre_de_sesion_de_usuario;
             btn_cerrarSesion.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_cerrarSesion.Location = new Point(12, 504);
+            btn_cerrarSesion.Location = new Point(10, 604);
             btn_cerrarSesion.Name = "btn_cerrarSesion";
-            btn_cerrarSesion.Padding = new Padding(15, 0, 0, 0);
+            btn_cerrarSesion.Padding = new Padding(5, 0, 0, 0);
             btn_cerrarSesion.Size = new Size(187, 49);
             btn_cerrarSesion.TabIndex = 13;
             btn_cerrarSesion.Text = "      Cerrar Sesión";
@@ -142,7 +144,7 @@
             button5.FlatStyle = FlatStyle.Flat;
             button5.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             button5.ForeColor = Color.White;
-            button5.Image = Properties.Resources.factura_punto_de_venta;
+            button5.Image = Properties.Resources.factura_punto_de_venta1;
             button5.ImageAlign = ContentAlignment.MiddleLeft;
             button5.Location = new Point(3, 425);
             button5.Name = "button5";
@@ -162,7 +164,7 @@
             button4.FlatStyle = FlatStyle.Flat;
             button4.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             button4.ForeColor = Color.White;
-            button4.Image = Properties.Resources.etiquetas;
+            button4.Image = Properties.Resources.etiquetas1;
             button4.ImageAlign = ContentAlignment.MiddleLeft;
             button4.Location = new Point(0, 370);
             button4.Name = "button4";
@@ -197,11 +199,11 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.user;
-            pictureBox1.Location = new Point(72, 32);
+            pictureBox1.Image = Properties.Resources.logo_bebidas_eli_vf;
+            pictureBox1.Location = new Point(13, 18);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(74, 82);
-            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox1.Size = new Size(185, 96);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
             // 
@@ -272,11 +274,31 @@
             panel3.Size = new Size(0, 0);
             panel3.TabIndex = 2;
             // 
+            // button6
+            // 
+            button6.Cursor = Cursors.Hand;
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatAppearance.MouseDownBackColor = Color.FromArgb(2, 100, 181);
+            button6.FlatAppearance.MouseOverBackColor = Color.FromArgb(2, 100, 181);
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            button6.ForeColor = Color.White;
+            button6.Image = Properties.Resources.icono_ventaDetalle1;
+            button6.ImageAlign = ContentAlignment.MiddleLeft;
+            button6.Location = new Point(0, 480);
+            button6.Name = "button6";
+            button6.Padding = new Padding(15, 0, 5, 0);
+            button6.Size = new Size(214, 72);
+            button6.TabIndex = 14;
+            button6.Text = "         Detalles de                Ventas";
+            button6.TextAlign = ContentAlignment.MiddleLeft;
+            button6.UseVisualStyleBackColor = true;
+            // 
             // FormPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1300, 618);
+            ClientSize = new Size(1300, 710);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
@@ -309,5 +331,6 @@
         private PictureBox pictureBox1;
         private Panel panel3;
         private Panel panel4;
+        private Button button6;
     }
 }
