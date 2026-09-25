@@ -28,42 +28,69 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             panel1 = new Panel();
+            estadoUsuario = new ComboBox();
+            Estado = new Label();
             btn_limpiar = new Button();
-            comboBox1 = new ComboBox();
+            cargoUsuario = new ComboBox();
             btn_eliminar = new Button();
             label3 = new Label();
             btn_editar = new Button();
-            textBox2 = new TextBox();
+            contrasenaUsuario = new TextBox();
             btn_agregar = new Button();
             label2 = new Label();
-            textBox1 = new TextBox();
+            nombreUsuario = new TextBox();
             label1 = new Label();
             panel2 = new Panel();
             label4 = new Label();
-            dataGridView1 = new DataGridView();
+            dgvUsuarios = new DataGridView();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvUsuarios).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.White;
+            panel1.Controls.Add(estadoUsuario);
+            panel1.Controls.Add(Estado);
             panel1.Controls.Add(btn_limpiar);
-            panel1.Controls.Add(comboBox1);
+            panel1.Controls.Add(cargoUsuario);
             panel1.Controls.Add(btn_eliminar);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(btn_editar);
-            panel1.Controls.Add(textBox2);
+            panel1.Controls.Add(contrasenaUsuario);
             panel1.Controls.Add(btn_agregar);
             panel1.Controls.Add(label2);
-            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(nombreUsuario);
             panel1.Controls.Add(label1);
             panel1.Location = new Point(13, 13);
             panel1.Name = "panel1";
             panel1.Size = new Size(375, 640);
             panel1.TabIndex = 0;
+            // 
+            // estadoUsuario
+            // 
+            estadoUsuario.Font = new Font("Segoe UI", 14F);
+            estadoUsuario.FormattingEnabled = true;
+            estadoUsuario.Items.AddRange(new object[] { "Activo", "Inactivo" });
+            estadoUsuario.Location = new Point(24, 366);
+            estadoUsuario.Name = "estadoUsuario";
+            estadoUsuario.Size = new Size(325, 33);
+            estadoUsuario.TabIndex = 22;
+            // 
+            // Estado
+            // 
+            Estado.AutoSize = true;
+            Estado.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            Estado.Location = new Point(24, 333);
+            Estado.Name = "Estado";
+            Estado.Size = new Size(71, 25);
+            Estado.TabIndex = 21;
+            Estado.Text = "Estado";
             // 
             // btn_limpiar
             // 
@@ -84,16 +111,17 @@
             btn_limpiar.TabIndex = 20;
             btn_limpiar.Text = "Limpiar";
             btn_limpiar.UseVisualStyleBackColor = false;
+            btn_limpiar.Click += btnLimpiar_Click;
             // 
-            // comboBox1
+            // cargoUsuario
             // 
-            comboBox1.Font = new Font("Segoe UI", 14F);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Administrador", "Vendedor" });
-            comboBox1.Location = new Point(24, 262);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(325, 33);
-            comboBox1.TabIndex = 17;
+            cargoUsuario.Font = new Font("Segoe UI", 14F);
+            cargoUsuario.FormattingEnabled = true;
+            cargoUsuario.Items.AddRange(new object[] { "Administrador", "Vendedor" });
+            cargoUsuario.Location = new Point(24, 262);
+            cargoUsuario.Name = "cargoUsuario";
+            cargoUsuario.Size = new Size(325, 33);
+            cargoUsuario.TabIndex = 17;
             // 
             // btn_eliminar
             // 
@@ -114,6 +142,7 @@
             btn_eliminar.TabIndex = 19;
             btn_eliminar.Text = "Eliminar";
             btn_eliminar.UseVisualStyleBackColor = false;
+            btn_eliminar.Click += btnEliminar_Click;
             // 
             // label3
             // 
@@ -144,14 +173,15 @@
             btn_editar.TabIndex = 18;
             btn_editar.Text = "Editar";
             btn_editar.UseVisualStyleBackColor = false;
+            btn_editar.Click += btnEditar_Click;
             // 
-            // textBox2
+            // contrasenaUsuario
             // 
-            textBox2.Font = new Font("Segoe UI", 14F);
-            textBox2.Location = new Point(24, 164);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(325, 32);
-            textBox2.TabIndex = 3;
+            contrasenaUsuario.Font = new Font("Segoe UI", 14F);
+            contrasenaUsuario.Location = new Point(24, 164);
+            contrasenaUsuario.Name = "contrasenaUsuario";
+            contrasenaUsuario.Size = new Size(325, 32);
+            contrasenaUsuario.TabIndex = 3;
             // 
             // btn_agregar
             // 
@@ -172,6 +202,7 @@
             btn_agregar.TabIndex = 17;
             btn_agregar.Text = "Agregar";
             btn_agregar.UseVisualStyleBackColor = false;
+            btn_agregar.Click += btnAgregar_Click;
             // 
             // label2
             // 
@@ -183,13 +214,13 @@
             label2.TabIndex = 2;
             label2.Text = "Contraseña";
             // 
-            // textBox1
+            // nombreUsuario
             // 
-            textBox1.Font = new Font("Segoe UI", 14F);
-            textBox1.Location = new Point(24, 63);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(325, 32);
-            textBox1.TabIndex = 1;
+            nombreUsuario.Font = new Font("Segoe UI", 14F);
+            nombreUsuario.Location = new Point(24, 63);
+            nombreUsuario.Name = "nombreUsuario";
+            nombreUsuario.Size = new Size(325, 32);
+            nombreUsuario.TabIndex = 1;
             // 
             // label1
             // 
@@ -205,7 +236,7 @@
             // 
             panel2.BackColor = Color.White;
             panel2.Controls.Add(label4);
-            panel2.Controls.Add(dataGridView1);
+            panel2.Controls.Add(dgvUsuarios);
             panel2.Location = new Point(401, 13);
             panel2.Name = "panel2";
             panel2.Size = new Size(668, 640);
@@ -221,15 +252,40 @@
             label4.TabIndex = 18;
             label4.Text = "Datos de los Usuarios";
             // 
-            // dataGridView1
+            // dgvUsuarios
             // 
-            dataGridView1.BackgroundColor = SystemColors.GradientActiveCaption;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(25, 63);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(619, 552);
-            dataGridView1.TabIndex = 0;
+            dgvUsuarios.AllowUserToAddRows = false;
+            dgvUsuarios.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvUsuarios.BackgroundColor = SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(232, 232, 232);
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 10F);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dgvUsuarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dgvUsuarios.ColumnHeadersHeight = 40;
+            dgvUsuarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.White;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            dgvUsuarios.DefaultCellStyle = dataGridViewCellStyle2;
+            dgvUsuarios.EnableHeadersVisualStyles = false;
+            dgvUsuarios.Location = new Point(25, 63);
+            dgvUsuarios.Name = "dgvUsuarios";
+            dgvUsuarios.ReadOnly = true;
+            dgvUsuarios.RowHeadersVisible = false;
+            dgvUsuarios.RowHeadersWidth = 62;
+            dataGridViewCellStyle3.BackColor = Color.White;
+            dgvUsuarios.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dgvUsuarios.Size = new Size(619, 552);
+            dgvUsuarios.TabIndex = 0;
+            dgvUsuarios.CellClick += dataGridViewUsuarios_CellClick;
             // 
             // AdminUsuarios
             // 
@@ -244,7 +300,7 @@
             panel1.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvUsuarios).EndInit();
             ResumeLayout(false);
         }
 
@@ -253,16 +309,18 @@
         private Panel panel1;
         private Panel panel2;
         private Label label3;
-        private TextBox textBox2;
+        private TextBox contrasenaUsuario;
         private Label label2;
-        private TextBox textBox1;
+        private TextBox nombreUsuario;
         private Label label1;
-        private ComboBox comboBox1;
+        private ComboBox cargoUsuario;
         private Label label4;
-        private DataGridView dataGridView1;
+        private DataGridView dgvUsuarios;
         private Button btn_limpiar;
         private Button btn_eliminar;
         private Button btn_editar;
         private Button btn_agregar;
+        private ComboBox estadoUsuario;
+        private Label Estado;
     }
 }

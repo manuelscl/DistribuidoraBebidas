@@ -32,6 +32,7 @@
             btn_cerrar = new Button();
             label1 = new Label();
             panel2 = new Panel();
+            button6 = new Button();
             panel4 = new Panel();
             btn_cerrarSesion = new Button();
             button5 = new Button();
@@ -42,8 +43,7 @@
             button3 = new Button();
             button2 = new Button();
             button1 = new Button();
-            panel3 = new Panel();
-            button6 = new Button();
+            adminUsuarios1 = new AdminUsuarios();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -104,8 +104,28 @@
             panel2.Dock = DockStyle.Left;
             panel2.Location = new Point(0, 45);
             panel2.Name = "panel2";
-            panel2.Size = new Size(214, 665);
+            panel2.Size = new Size(218, 665);
             panel2.TabIndex = 1;
+            // 
+            // button6
+            // 
+            button6.Cursor = Cursors.Hand;
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatAppearance.MouseDownBackColor = Color.FromArgb(2, 100, 181);
+            button6.FlatAppearance.MouseOverBackColor = Color.FromArgb(2, 100, 181);
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            button6.ForeColor = Color.White;
+            button6.Image = Properties.Resources.icono_ventaDetalle1;
+            button6.ImageAlign = ContentAlignment.MiddleLeft;
+            button6.Location = new Point(0, 480);
+            button6.Name = "button6";
+            button6.Padding = new Padding(15, 0, 5, 0);
+            button6.Size = new Size(218, 72);
+            button6.TabIndex = 14;
+            button6.Text = "         Detalles de                 Ventas";
+            button6.TextAlign = ContentAlignment.MiddleLeft;
+            button6.UseVisualStyleBackColor = true;
             // 
             // panel4
             // 
@@ -126,10 +146,10 @@
             btn_cerrarSesion.ForeColor = Color.White;
             btn_cerrarSesion.Image = Properties.Resources.cierre_de_sesion_de_usuario;
             btn_cerrarSesion.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_cerrarSesion.Location = new Point(10, 604);
+            btn_cerrarSesion.Location = new Point(14, 604);
             btn_cerrarSesion.Name = "btn_cerrarSesion";
             btn_cerrarSesion.Padding = new Padding(5, 0, 0, 0);
-            btn_cerrarSesion.Size = new Size(187, 49);
+            btn_cerrarSesion.Size = new Size(188, 49);
             btn_cerrarSesion.TabIndex = 13;
             btn_cerrarSesion.Text = "      Cerrar Sesión";
             btn_cerrarSesion.UseVisualStyleBackColor = false;
@@ -149,7 +169,7 @@
             button5.Location = new Point(3, 425);
             button5.Name = "button5";
             button5.Padding = new Padding(15, 0, 5, 0);
-            button5.Size = new Size(211, 49);
+            button5.Size = new Size(215, 49);
             button5.TabIndex = 12;
             button5.Text = "         Ventas";
             button5.TextAlign = ContentAlignment.MiddleLeft;
@@ -169,7 +189,7 @@
             button4.Location = new Point(0, 370);
             button4.Name = "button4";
             button4.Padding = new Padding(15, 0, 5, 0);
-            button4.Size = new Size(211, 49);
+            button4.Size = new Size(218, 49);
             button4.TabIndex = 11;
             button4.Text = "         Categorías";
             button4.TextAlign = ContentAlignment.MiddleLeft;
@@ -221,7 +241,7 @@
             button3.Location = new Point(0, 315);
             button3.Name = "button3";
             button3.Padding = new Padding(15, 0, 5, 0);
-            button3.Size = new Size(211, 49);
+            button3.Size = new Size(218, 49);
             button3.TabIndex = 4;
             button3.Text = "         Productos";
             button3.TextAlign = ContentAlignment.MiddleLeft;
@@ -241,7 +261,7 @@
             button2.Location = new Point(0, 260);
             button2.Name = "button2";
             button2.Padding = new Padding(15, 0, 5, 0);
-            button2.Size = new Size(211, 49);
+            button2.Size = new Size(218, 49);
             button2.TabIndex = 3;
             button2.Text = "         Usuarios";
             button2.TextAlign = ContentAlignment.MiddleLeft;
@@ -261,45 +281,26 @@
             button1.Location = new Point(0, 205);
             button1.Name = "button1";
             button1.Padding = new Padding(15, 0, 5, 0);
-            button1.Size = new Size(211, 49);
+            button1.Size = new Size(218, 49);
             button1.TabIndex = 2;
             button1.Text = "         Inicio";
             button1.TextAlign = ContentAlignment.MiddleLeft;
             button1.UseVisualStyleBackColor = true;
             // 
-            // panel3
+            // adminUsuarios1
             // 
-            panel3.Location = new Point(244, 45);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(0, 0);
-            panel3.TabIndex = 2;
-            // 
-            // button6
-            // 
-            button6.Cursor = Cursors.Hand;
-            button6.FlatAppearance.BorderSize = 0;
-            button6.FlatAppearance.MouseDownBackColor = Color.FromArgb(2, 100, 181);
-            button6.FlatAppearance.MouseOverBackColor = Color.FromArgb(2, 100, 181);
-            button6.FlatStyle = FlatStyle.Flat;
-            button6.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            button6.ForeColor = Color.White;
-            button6.Image = Properties.Resources.icono_ventaDetalle1;
-            button6.ImageAlign = ContentAlignment.MiddleLeft;
-            button6.Location = new Point(0, 480);
-            button6.Name = "button6";
-            button6.Padding = new Padding(15, 0, 5, 0);
-            button6.Size = new Size(214, 72);
-            button6.TabIndex = 14;
-            button6.Text = "         Detalles de                Ventas";
-            button6.TextAlign = ContentAlignment.MiddleLeft;
-            button6.UseVisualStyleBackColor = true;
+            adminUsuarios1.BackColor = Color.Teal;
+            adminUsuarios1.Location = new Point(217, 45);
+            adminUsuarios1.Name = "adminUsuarios1";
+            adminUsuarios1.Size = new Size(1085, 665);
+            adminUsuarios1.TabIndex = 2;
             // 
             // FormPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1300, 710);
-            Controls.Add(panel3);
+            Controls.Add(adminUsuarios1);
             Controls.Add(panel2);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
@@ -329,8 +330,8 @@
         private Label label3;
         private Label label2;
         private PictureBox pictureBox1;
-        private Panel panel3;
         private Panel panel4;
         private Button button6;
+        private AdminUsuarios adminUsuarios1;
     }
 }
