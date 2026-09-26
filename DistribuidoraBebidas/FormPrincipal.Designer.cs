@@ -367,7 +367,7 @@
             // 
             // agregarVenta1
             // 
-            agregarVenta1.Location = new Point(217, 44);
+            agregarVenta1.Location = new Point(218, 45);
             agregarVenta1.Name = "agregarVenta1";
             agregarVenta1.Size = new Size(1085, 665);
             agregarVenta1.TabIndex = 9;

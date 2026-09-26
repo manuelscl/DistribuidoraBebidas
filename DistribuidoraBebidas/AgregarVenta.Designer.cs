@@ -43,8 +43,8 @@
             btnPagar = new Button();
             dgvCarrito = new DataGridView();
             label1 = new Label();
-            buscador = new TextBox();
-            btnBuscador = new Button();
+            txtBuscarProducto = new TextBox();
+            btnBuscar = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvProductos).BeginInit();
             panel2.SuspendLayout();
@@ -72,6 +72,8 @@
             dgvProductos.RowHeadersVisible = false;
             dgvProductos.Size = new Size(578, 567);
             dgvProductos.TabIndex = 0;
+            dgvProductos.CellContentClick += dgvProductos_CellContentClick;
+            dgvProductos.CellDoubleClick += dgvProductos_CellDoubleClick;
             // 
             // panel2
             // 
@@ -107,12 +109,13 @@
             btnLimpiar.TabIndex = 22;
             btnLimpiar.Text = "Limpiar";
             btnLimpiar.UseVisualStyleBackColor = false;
+            btnLimpiar.Click += btnLimpiar_Click;
             // 
             // total
             // 
             total.AutoSize = true;
             total.Font = new Font("Segoe UI", 14F);
-            total.Location = new Point(406, 432);
+            total.Location = new Point(321, 432);
             total.Name = "total";
             total.Size = new Size(22, 25);
             total.TabIndex = 21;
@@ -122,7 +125,7 @@
             // 
             impuestos.AutoSize = true;
             impuestos.Font = new Font("Segoe UI", 14F);
-            impuestos.Location = new Point(406, 381);
+            impuestos.Location = new Point(321, 381);
             impuestos.Name = "impuestos";
             impuestos.Size = new Size(22, 25);
             impuestos.TabIndex = 20;
@@ -132,7 +135,7 @@
             // 
             subtotal.AutoSize = true;
             subtotal.Font = new Font("Segoe UI", 14F);
-            subtotal.Location = new Point(406, 327);
+            subtotal.Location = new Point(321, 327);
             subtotal.Name = "subtotal";
             subtotal.Size = new Size(22, 25);
             subtotal.TabIndex = 19;
@@ -142,7 +145,7 @@
             // 
             totalArticulos.AutoSize = true;
             totalArticulos.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            totalArticulos.Location = new Point(406, 274);
+            totalArticulos.Location = new Point(321, 274);
             totalArticulos.Name = "totalArticulos";
             totalArticulos.Size = new Size(23, 25);
             totalArticulos.TabIndex = 18;
@@ -205,6 +208,7 @@
             btnPagar.TabIndex = 14;
             btnPagar.Text = "Calcular";
             btnPagar.UseVisualStyleBackColor = false;
+            btnPagar.Click += btnPagar_Click;
             // 
             // dgvCarrito
             // 
@@ -219,6 +223,8 @@
             dgvCarrito.RowHeadersVisible = false;
             dgvCarrito.Size = new Size(448, 238);
             dgvCarrito.TabIndex = 1;
+            dgvCarrito.CellContentClick += dgvCarrito_CellContentClick;
+            dgvCarrito.KeyDown += dgvCarrito_KeyDown;
             // 
             // label1
             // 
@@ -230,35 +236,37 @@
             label1.TabIndex = 2;
             label1.Text = "Buscar Productos:";
             // 
-            // buscador
+            // txtBuscarProducto
             // 
-            buscador.Font = new Font("Segoe UI", 16F);
-            buscador.Location = new Point(190, 28);
-            buscador.Name = "buscador";
-            buscador.Size = new Size(358, 36);
-            buscador.TabIndex = 3;
+            txtBuscarProducto.Font = new Font("Segoe UI", 16F);
+            txtBuscarProducto.Location = new Point(190, 28);
+            txtBuscarProducto.Name = "txtBuscarProducto";
+            txtBuscarProducto.Size = new Size(358, 36);
+            txtBuscarProducto.TabIndex = 3;
+            txtBuscarProducto.TextChanged += txtBuscarProducto_TextChanged;
             // 
-            // btnBuscador
+            // btnBuscar
             // 
-            btnBuscador.BackColor = Color.FromArgb(0, 115, 209);
-            btnBuscador.Cursor = Cursors.Hand;
-            btnBuscador.FlatAppearance.BorderSize = 0;
-            btnBuscador.FlatAppearance.MouseDownBackColor = Color.FromArgb(2, 100, 181);
-            btnBuscador.FlatAppearance.MouseOverBackColor = Color.FromArgb(2, 100, 181);
-            btnBuscador.FlatStyle = FlatStyle.Flat;
-            btnBuscador.Image = Properties.Resources.lupa;
-            btnBuscador.Location = new Point(547, 28);
-            btnBuscador.Name = "btnBuscador";
-            btnBuscador.Size = new Size(45, 36);
-            btnBuscador.TabIndex = 4;
-            btnBuscador.UseVisualStyleBackColor = false;
+            btnBuscar.BackColor = Color.FromArgb(0, 115, 209);
+            btnBuscar.Cursor = Cursors.Hand;
+            btnBuscar.FlatAppearance.BorderSize = 0;
+            btnBuscar.FlatAppearance.MouseDownBackColor = Color.FromArgb(2, 100, 181);
+            btnBuscar.FlatAppearance.MouseOverBackColor = Color.FromArgb(2, 100, 181);
+            btnBuscar.FlatStyle = FlatStyle.Flat;
+            btnBuscar.Image = Properties.Resources.lupa;
+            btnBuscar.Location = new Point(547, 28);
+            btnBuscar.Name = "btnBuscar";
+            btnBuscar.Size = new Size(45, 36);
+            btnBuscar.TabIndex = 4;
+            btnBuscar.UseVisualStyleBackColor = false;
+            btnBuscar.Click += btnBuscar_Click;
             // 
             // AgregarVenta
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(btnBuscador);
-            Controls.Add(buscador);
+            Controls.Add(btnBuscar);
+            Controls.Add(txtBuscarProducto);
             Controls.Add(label1);
             Controls.Add(panel2);
             Controls.Add(panel1);
@@ -278,8 +286,8 @@
         private Panel panel1;
         private Panel panel2;
         private Label label1;
-        private TextBox buscador;
-        private Button btnBuscador;
+        private TextBox txtBuscarProducto;
+        private Button btnBuscar;
         private DataGridView dgvProductos;
         private DataGridView dgvCarrito;
         private Button btnPagar;
