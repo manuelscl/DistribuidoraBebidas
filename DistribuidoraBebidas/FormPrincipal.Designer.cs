@@ -47,8 +47,8 @@
             panelAdmin1 = new PanelAdmin();
             adminAgregarClientes1 = new AdminAgregarClientes();
             agregarCategoria1 = new AgregarCategoria();
-            agregarProductos1 = new AgregarProductos();
             agregarMarcas1 = new AgregarMarcas();
+            agregarProductos1 = new AgregarProductos();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -348,13 +348,6 @@
             agregarCategoria1.Size = new Size(1085, 665);
             agregarCategoria1.TabIndex = 9;
             // 
-            // agregarProductos1
-            // 
-            agregarProductos1.Location = new Point(217, 44);
-            agregarProductos1.Name = "agregarProductos1";
-            agregarProductos1.Size = new Size(1085, 665);
-            agregarProductos1.TabIndex = 9;
-            // 
             // agregarMarcas1
             // 
             agregarMarcas1.BackColor = Color.Teal;
@@ -362,6 +355,13 @@
             agregarMarcas1.Name = "agregarMarcas1";
             agregarMarcas1.Size = new Size(1085, 665);
             agregarMarcas1.TabIndex = 9;
+            // 
+            // agregarProductos1
+            // 
+            agregarProductos1.Location = new Point(218, 44);
+            agregarProductos1.Name = "agregarProductos1";
+            agregarProductos1.Size = new Size(1085, 665);
+            agregarProductos1.TabIndex = 9;
             // 
             // FormPrincipal
             // 
@@ -407,8 +407,8 @@
         private PanelAdmin panelAdmin1;
         private AdminAgregarClientes adminAgregarClientes1;
         private AgregarCategoria agregarCategoria1;
-        private AgregarProductos agregarProductos1;
         private Button btnMarcas;
         private AgregarMarcas agregarMarcas1;
+        private AgregarProductos agregarProductos1;
     }
 }
