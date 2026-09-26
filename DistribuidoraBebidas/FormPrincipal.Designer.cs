@@ -37,7 +37,7 @@
             button6 = new Button();
             panel4 = new Panel();
             btn_cerrarSesion = new Button();
-            button5 = new Button();
+            btnVentas = new Button();
             btnCategorias = new Button();
             pictureBox1 = new PictureBox();
             btnProductos = new Button();
@@ -49,6 +49,7 @@
             agregarCategoria1 = new AgregarCategoria();
             agregarMarcas1 = new AgregarMarcas();
             agregarProductos1 = new AgregarProductos();
+            agregarVenta1 = new AgregarVenta();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -100,7 +101,7 @@
             panel2.Controls.Add(button6);
             panel2.Controls.Add(panel4);
             panel2.Controls.Add(btn_cerrarSesion);
-            panel2.Controls.Add(button5);
+            panel2.Controls.Add(btnVentas);
             panel2.Controls.Add(btnCategorias);
             panel2.Controls.Add(pictureBox1);
             panel2.Controls.Add(btnProductos);
@@ -202,25 +203,26 @@
             btn_cerrarSesion.UseVisualStyleBackColor = false;
             btn_cerrarSesion.Click += btn_cerrarSesion_Click;
             // 
-            // button5
+            // btnVentas
             // 
-            button5.Cursor = Cursors.Hand;
-            button5.FlatAppearance.BorderSize = 0;
-            button5.FlatAppearance.MouseDownBackColor = Color.FromArgb(2, 100, 181);
-            button5.FlatAppearance.MouseOverBackColor = Color.FromArgb(2, 100, 181);
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            button5.ForeColor = Color.White;
-            button5.Image = Properties.Resources.factura_punto_de_venta1;
-            button5.ImageAlign = ContentAlignment.MiddleLeft;
-            button5.Location = new Point(3, 460);
-            button5.Name = "button5";
-            button5.Padding = new Padding(15, 0, 5, 0);
-            button5.Size = new Size(215, 49);
-            button5.TabIndex = 12;
-            button5.Text = "         Ventas";
-            button5.TextAlign = ContentAlignment.MiddleLeft;
-            button5.UseVisualStyleBackColor = true;
+            btnVentas.Cursor = Cursors.Hand;
+            btnVentas.FlatAppearance.BorderSize = 0;
+            btnVentas.FlatAppearance.MouseDownBackColor = Color.FromArgb(2, 100, 181);
+            btnVentas.FlatAppearance.MouseOverBackColor = Color.FromArgb(2, 100, 181);
+            btnVentas.FlatStyle = FlatStyle.Flat;
+            btnVentas.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            btnVentas.ForeColor = Color.White;
+            btnVentas.Image = Properties.Resources.factura_punto_de_venta1;
+            btnVentas.ImageAlign = ContentAlignment.MiddleLeft;
+            btnVentas.Location = new Point(3, 460);
+            btnVentas.Name = "btnVentas";
+            btnVentas.Padding = new Padding(15, 0, 5, 0);
+            btnVentas.Size = new Size(215, 49);
+            btnVentas.TabIndex = 12;
+            btnVentas.Text = "         Ventas";
+            btnVentas.TextAlign = ContentAlignment.MiddleLeft;
+            btnVentas.UseVisualStyleBackColor = true;
+            btnVentas.Click += btnVentas_Click;
             // 
             // btnCategorias
             // 
@@ -363,6 +365,13 @@
             agregarProductos1.Size = new Size(1085, 665);
             agregarProductos1.TabIndex = 9;
             // 
+            // agregarVenta1
+            // 
+            agregarVenta1.Location = new Point(217, 44);
+            agregarVenta1.Name = "agregarVenta1";
+            agregarVenta1.Size = new Size(1085, 665);
+            agregarVenta1.TabIndex = 9;
+            // 
             // FormPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -376,6 +385,7 @@
             Controls.Add(agregarCategoria1);
             Controls.Add(agregarProductos1);
             Controls.Add(agregarMarcas1);
+            Controls.Add(agregarVenta1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormPrincipal";
             StartPosition = FormStartPosition.CenterScreen;
@@ -397,7 +407,7 @@
         private Button btnProductos;
         private Button btnUsuarios;
         private Button btn_cerrarSesion;
-        private Button button5;
+        private Button btnVentas;
         private Button btnCategorias;
         private PictureBox pictureBox1;
         private Panel panel4;
@@ -410,5 +420,6 @@
         private Button btnMarcas;
         private AgregarMarcas agregarMarcas1;
         private AgregarProductos agregarProductos1;
+        private AgregarVenta agregarVenta1;
     }
 }
