@@ -37,7 +37,7 @@
             panel4 = new Panel();
             btn_cerrarSesion = new Button();
             button5 = new Button();
-            button4 = new Button();
+            btnCategorias = new Button();
             pictureBox1 = new PictureBox();
             button3 = new Button();
             btnUsuarios = new Button();
@@ -45,6 +45,7 @@
             adminUsuarios1 = new AdminUsuarios();
             panelAdmin1 = new PanelAdmin();
             adminAgregarClientes1 = new AdminAgregarClientes();
+            agregarCategoria1 = new AgregarCategoria();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -96,7 +97,7 @@
             panel2.Controls.Add(panel4);
             panel2.Controls.Add(btn_cerrarSesion);
             panel2.Controls.Add(button5);
-            panel2.Controls.Add(button4);
+            panel2.Controls.Add(btnCategorias);
             panel2.Controls.Add(pictureBox1);
             panel2.Controls.Add(button3);
             panel2.Controls.Add(btnUsuarios);
@@ -196,25 +197,26 @@
             button5.TextAlign = ContentAlignment.MiddleLeft;
             button5.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnCategorias
             // 
-            button4.Cursor = Cursors.Hand;
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatAppearance.MouseDownBackColor = Color.FromArgb(2, 100, 181);
-            button4.FlatAppearance.MouseOverBackColor = Color.FromArgb(2, 100, 181);
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            button4.ForeColor = Color.White;
-            button4.Image = Properties.Resources.etiquetas1;
-            button4.ImageAlign = ContentAlignment.MiddleLeft;
-            button4.Location = new Point(0, 361);
-            button4.Name = "button4";
-            button4.Padding = new Padding(15, 0, 5, 0);
-            button4.Size = new Size(218, 49);
-            button4.TabIndex = 11;
-            button4.Text = "         Categorías";
-            button4.TextAlign = ContentAlignment.MiddleLeft;
-            button4.UseVisualStyleBackColor = true;
+            btnCategorias.Cursor = Cursors.Hand;
+            btnCategorias.FlatAppearance.BorderSize = 0;
+            btnCategorias.FlatAppearance.MouseDownBackColor = Color.FromArgb(2, 100, 181);
+            btnCategorias.FlatAppearance.MouseOverBackColor = Color.FromArgb(2, 100, 181);
+            btnCategorias.FlatStyle = FlatStyle.Flat;
+            btnCategorias.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            btnCategorias.ForeColor = Color.White;
+            btnCategorias.Image = Properties.Resources.etiquetas1;
+            btnCategorias.ImageAlign = ContentAlignment.MiddleLeft;
+            btnCategorias.Location = new Point(0, 361);
+            btnCategorias.Name = "btnCategorias";
+            btnCategorias.Padding = new Padding(15, 0, 5, 0);
+            btnCategorias.Size = new Size(218, 49);
+            btnCategorias.TabIndex = 11;
+            btnCategorias.Text = "         Categorías";
+            btnCategorias.TextAlign = ContentAlignment.MiddleLeft;
+            btnCategorias.UseVisualStyleBackColor = true;
+            btnCategorias.Click += btnCategorias_Click;
             // 
             // pictureBox1
             // 
@@ -312,6 +314,14 @@
             adminAgregarClientes1.Size = new Size(1085, 665);
             adminAgregarClientes1.TabIndex = 9;
             // 
+            // agregarCategoria1
+            // 
+            agregarCategoria1.BackColor = Color.Teal;
+            agregarCategoria1.Location = new Point(215, 45);
+            agregarCategoria1.Name = "agregarCategoria1";
+            agregarCategoria1.Size = new Size(1085, 665);
+            agregarCategoria1.TabIndex = 9;
+            // 
             // FormPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -322,6 +332,7 @@
             Controls.Add(panelAdmin1);
             Controls.Add(adminUsuarios1);
             Controls.Add(adminAgregarClientes1);
+            Controls.Add(agregarCategoria1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormPrincipal";
             StartPosition = FormStartPosition.CenterScreen;
@@ -344,7 +355,7 @@
         private Button btnUsuarios;
         private Button btn_cerrarSesion;
         private Button button5;
-        private Button button4;
+        private Button btnCategorias;
         private PictureBox pictureBox1;
         private Panel panel4;
         private Button button6;
@@ -352,5 +363,6 @@
         private Button btnClientes;
         private PanelAdmin panelAdmin1;
         private AdminAgregarClientes adminAgregarClientes1;
+        private AgregarCategoria agregarCategoria1;
     }
 }

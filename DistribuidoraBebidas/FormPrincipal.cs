@@ -38,6 +38,7 @@ namespace DistribuidoraBebidas
             panelAdmin1.Visible = true;
             adminUsuarios1.Visible = false;
             adminAgregarClientes1.Visible = false;
+            agregarCategoria1.Visible = false;
         }
 
         private void btnUsuarios_Click(object sender, EventArgs e)
@@ -45,6 +46,7 @@ namespace DistribuidoraBebidas
             panelAdmin1.Visible = false;
             adminUsuarios1.Visible = true;
             adminAgregarClientes1.Visible = false;
+            agregarCategoria1.Visible = false;
             AdminUsuarios form = adminUsuarios1 as AdminUsuarios;
             if (form != null) { form.CargarDatosTabla(); }
         }
@@ -54,7 +56,18 @@ namespace DistribuidoraBebidas
             panelAdmin1.Visible = false;
             adminUsuarios1.Visible = false;
             adminAgregarClientes1.Visible = true;
+            agregarCategoria1.Visible = false;
             AdminAgregarClientes form = adminAgregarClientes1 as AdminAgregarClientes;
+            if (form != null) { form.CargarDatosTabla(); }
+        }
+
+        private void btnCategorias_Click(object sender, EventArgs e)
+        {
+            panelAdmin1.Visible = false;
+            adminUsuarios1.Visible = false;
+            adminAgregarClientes1.Visible = false;
+            agregarCategoria1.Visible = true;
+            AgregarCategoria form = agregarCategoria1 as AgregarCategoria;
             if (form != null) { form.CargarDatosTabla(); }
         }
     }

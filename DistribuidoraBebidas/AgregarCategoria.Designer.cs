@@ -30,18 +30,16 @@
         {
             panel2 = new Panel();
             label4 = new Label();
-            dgv_categorias = new DataGridView();
+            dgvCategorias = new DataGridView();
             panel1 = new Panel();
+            nombreCategoria = new TextBox();
             btn_limpiar = new Button();
             btn_eliminar = new Button();
             btn_editar = new Button();
             btn_agregar = new Button();
             label2 = new Label();
-            ID_categoria = new TextBox();
-            label1 = new Label();
-            textBox1 = new TextBox();
             panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dgv_categorias).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvCategorias).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -49,7 +47,7 @@
             // 
             panel2.BackColor = Color.White;
             panel2.Controls.Add(label4);
-            panel2.Controls.Add(dgv_categorias);
+            panel2.Controls.Add(dgvCategorias);
             panel2.Location = new Point(373, 14);
             panel2.Name = "panel2";
             panel2.Size = new Size(696, 638);
@@ -59,37 +57,48 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            label4.Location = new Point(18, 13);
+            label4.Location = new Point(18, 41);
             label4.Name = "label4";
             label4.Size = new Size(194, 25);
             label4.TabIndex = 18;
             label4.Text = "Datos de los Clientes";
             // 
-            // dgv_categorias
+            // dgvCategorias
             // 
-            dgv_categorias.BackgroundColor = SystemColors.GradientActiveCaption;
-            dgv_categorias.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgv_categorias.Location = new Point(18, 41);
-            dgv_categorias.Name = "dgv_categorias";
-            dgv_categorias.RowHeadersWidth = 62;
-            dgv_categorias.Size = new Size(656, 583);
-            dgv_categorias.TabIndex = 0;
+            dgvCategorias.AllowUserToAddRows = false;
+            dgvCategorias.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvCategorias.BackgroundColor = SystemColors.GradientActiveCaption;
+            dgvCategorias.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvCategorias.Location = new Point(18, 91);
+            dgvCategorias.Name = "dgvCategorias";
+            dgvCategorias.ReadOnly = true;
+            dgvCategorias.RowHeadersVisible = false;
+            dgvCategorias.RowHeadersWidth = 62;
+            dgvCategorias.Size = new Size(656, 533);
+            dgvCategorias.TabIndex = 0;
+            dgvCategorias.CellClick += dgvCategorias_CellClick;
             // 
             // panel1
             // 
             panel1.BackColor = Color.White;
-            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(nombreCategoria);
             panel1.Controls.Add(btn_limpiar);
             panel1.Controls.Add(btn_eliminar);
             panel1.Controls.Add(btn_editar);
             panel1.Controls.Add(btn_agregar);
             panel1.Controls.Add(label2);
-            panel1.Controls.Add(ID_categoria);
-            panel1.Controls.Add(label1);
             panel1.Location = new Point(15, 14);
             panel1.Name = "panel1";
             panel1.Size = new Size(352, 638);
             panel1.TabIndex = 4;
+            // 
+            // nombreCategoria
+            // 
+            nombreCategoria.Font = new Font("Segoe UI", 14F);
+            nombreCategoria.Location = new Point(14, 91);
+            nombreCategoria.Name = "nombreCategoria";
+            nombreCategoria.Size = new Size(325, 32);
+            nombreCategoria.TabIndex = 17;
             // 
             // btn_limpiar
             // 
@@ -110,6 +119,7 @@
             btn_limpiar.TabIndex = 16;
             btn_limpiar.Text = "Limpiar";
             btn_limpiar.UseVisualStyleBackColor = false;
+            btn_limpiar.Click += btnLimpiar_Click;
             // 
             // btn_eliminar
             // 
@@ -130,6 +140,7 @@
             btn_eliminar.TabIndex = 15;
             btn_eliminar.Text = "Eliminar";
             btn_eliminar.UseVisualStyleBackColor = false;
+            btn_eliminar.Click += btnEliminar_Click;
             // 
             // btn_editar
             // 
@@ -150,6 +161,7 @@
             btn_editar.TabIndex = 14;
             btn_editar.Text = "Editar";
             btn_editar.UseVisualStyleBackColor = false;
+            btn_editar.Click += btnEditar_Click;
             // 
             // btn_agregar
             // 
@@ -170,42 +182,17 @@
             btn_agregar.TabIndex = 13;
             btn_agregar.Text = "Agregar";
             btn_agregar.UseVisualStyleBackColor = false;
+            btn_agregar.Click += btnAgregar_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            label2.Location = new Point(14, 102);
+            label2.Location = new Point(14, 41);
             label2.Name = "label2";
             label2.Size = new Size(204, 25);
             label2.TabIndex = 2;
             label2.Text = "Nombre de Categoría";
-            // 
-            // ID_categoria
-            // 
-            ID_categoria.Font = new Font("Segoe UI", 14F);
-            ID_categoria.Location = new Point(14, 42);
-            ID_categoria.Name = "ID_categoria";
-            ID_categoria.Size = new Size(325, 32);
-            ID_categoria.TabIndex = 1;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            label1.Location = new Point(14, 13);
-            label1.Name = "label1";
-            label1.Size = new Size(123, 25);
-            label1.TabIndex = 0;
-            label1.Text = "ID Categoria";
-            // 
-            // textBox1
-            // 
-            textBox1.Font = new Font("Segoe UI", 14F);
-            textBox1.Location = new Point(14, 140);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(325, 32);
-            textBox1.TabIndex = 17;
             // 
             // AgregarCategoria
             // 
@@ -218,7 +205,7 @@
             Size = new Size(1085, 665);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dgv_categorias).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvCategorias).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
@@ -228,7 +215,7 @@
 
         private Panel panel2;
         private Label label4;
-        private DataGridView dgv_categorias;
+        private DataGridView dgvCategorias;
         private Panel panel1;
         private TextBox textBox4;
         private Label label5;
@@ -240,8 +227,6 @@
         private Label label3;
         private TextBox textBox2;
         private Label label2;
-        private TextBox ID_categoria;
-        private Label label1;
-        private TextBox textBox1;
+        private TextBox nombreCategoria;
     }
 }
