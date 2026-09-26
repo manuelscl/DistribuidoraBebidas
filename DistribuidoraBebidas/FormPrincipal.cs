@@ -46,6 +46,7 @@ namespace DistribuidoraBebidas
             panelAdmin1.Visible = false;
             adminUsuarios1.Visible = true;
             adminAgregarClientes1.Visible = false;
+            agregarProductos1.Visible = false;
             agregarCategoria1.Visible = false;
             AdminUsuarios form = adminUsuarios1 as AdminUsuarios;
             if (form != null) { form.CargarDatosTabla(); }
@@ -56,18 +57,43 @@ namespace DistribuidoraBebidas
             panelAdmin1.Visible = false;
             adminUsuarios1.Visible = false;
             adminAgregarClientes1.Visible = true;
+            agregarProductos1.Visible = false;
             agregarCategoria1.Visible = false;
             AdminAgregarClientes form = adminAgregarClientes1 as AdminAgregarClientes;
             if (form != null) { form.CargarDatosTabla(); }
         }
 
+        private void btnProductos_Click(object sender, EventArgs e)
+        {
+            panelAdmin1.Visible = false;
+            adminUsuarios1.Visible = false;
+            adminAgregarClientes1.Visible = false;
+            agregarProductos1.Visible = true;
+            agregarCategoria1.Visible = false;
+
+            AgregarProductos form = agregarProductos1 as AgregarProductos;
+            if (form != null) { form.CargarDatosTabla(); }
+        }
         private void btnCategorias_Click(object sender, EventArgs e)
         {
             panelAdmin1.Visible = false;
             adminUsuarios1.Visible = false;
             adminAgregarClientes1.Visible = false;
+            agregarProductos1.Visible = false;
             agregarCategoria1.Visible = true;
             AgregarCategoria form = agregarCategoria1 as AgregarCategoria;
+            if (form != null) { form.CargarDatosTabla(); }
+        }
+
+        private void btnMarcas_Click(object sender, EventArgs e)
+        {
+            panelAdmin1.Visible = false;
+            adminUsuarios1.Visible = false;
+            adminAgregarClientes1.Visible = false;
+            agregarProductos1.Visible = false;
+            agregarCategoria1.Visible = false;
+            agregarMarcas1.Visible = true;
+            AgregarMarcas form = agregarMarcas1 as AgregarMarcas;
             if (form != null) { form.CargarDatosTabla(); }
         }
     }

@@ -1,6 +1,6 @@
 ﻿namespace DistribuidoraBebidas
 {
-    partial class AgregarCategoria
+    partial class AgregarMarcas
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,16 +30,16 @@
         {
             panel2 = new Panel();
             label4 = new Label();
-            dgvCategorias = new DataGridView();
+            dgvMarcas = new DataGridView();
             panel1 = new Panel();
-            nombreCategoria = new TextBox();
+            nombreMarca = new TextBox();
             btn_limpiar = new Button();
             btn_eliminar = new Button();
             btn_editar = new Button();
             btn_agregar = new Button();
             label2 = new Label();
             panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvCategorias).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvMarcas).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -47,11 +47,11 @@
             // 
             panel2.BackColor = Color.White;
             panel2.Controls.Add(label4);
-            panel2.Controls.Add(dgvCategorias);
-            panel2.Location = new Point(373, 14);
+            panel2.Controls.Add(dgvMarcas);
+            panel2.Location = new Point(373, 13);
             panel2.Name = "panel2";
             panel2.Size = new Size(696, 638);
-            panel2.TabIndex = 5;
+            panel2.TabIndex = 7;
             // 
             // label4
             // 
@@ -59,46 +59,46 @@
             label4.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             label4.Location = new Point(18, 41);
             label4.Name = "label4";
-            label4.Size = new Size(106, 25);
+            label4.Size = new Size(75, 25);
             label4.TabIndex = 18;
-            label4.Text = "Categorías";
+            label4.Text = "Marcas";
             // 
-            // dgvCategorias
+            // dgvMarcas
             // 
-            dgvCategorias.AllowUserToAddRows = false;
-            dgvCategorias.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgvCategorias.BackgroundColor = SystemColors.GradientActiveCaption;
-            dgvCategorias.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvCategorias.Location = new Point(18, 91);
-            dgvCategorias.Name = "dgvCategorias";
-            dgvCategorias.ReadOnly = true;
-            dgvCategorias.RowHeadersVisible = false;
-            dgvCategorias.RowHeadersWidth = 62;
-            dgvCategorias.Size = new Size(656, 533);
-            dgvCategorias.TabIndex = 0;
-            dgvCategorias.CellClick += dgvCategorias_CellClick;
+            dgvMarcas.AllowUserToAddRows = false;
+            dgvMarcas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvMarcas.BackgroundColor = SystemColors.GradientActiveCaption;
+            dgvMarcas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvMarcas.Location = new Point(18, 91);
+            dgvMarcas.Name = "dgvMarcas";
+            dgvMarcas.ReadOnly = true;
+            dgvMarcas.RowHeadersVisible = false;
+            dgvMarcas.RowHeadersWidth = 62;
+            dgvMarcas.Size = new Size(656, 533);
+            dgvMarcas.TabIndex = 0;
+            dgvMarcas.CellClick += dgvMarcas_CellClick;
             // 
             // panel1
             // 
             panel1.BackColor = Color.White;
-            panel1.Controls.Add(nombreCategoria);
+            panel1.Controls.Add(nombreMarca);
             panel1.Controls.Add(btn_limpiar);
             panel1.Controls.Add(btn_eliminar);
             panel1.Controls.Add(btn_editar);
             panel1.Controls.Add(btn_agregar);
             panel1.Controls.Add(label2);
-            panel1.Location = new Point(15, 14);
+            panel1.Location = new Point(15, 13);
             panel1.Name = "panel1";
             panel1.Size = new Size(352, 638);
-            panel1.TabIndex = 4;
+            panel1.TabIndex = 6;
             // 
-            // nombreCategoria
+            // nombreMarca
             // 
-            nombreCategoria.Font = new Font("Segoe UI", 14F);
-            nombreCategoria.Location = new Point(14, 91);
-            nombreCategoria.Name = "nombreCategoria";
-            nombreCategoria.Size = new Size(325, 32);
-            nombreCategoria.TabIndex = 17;
+            nombreMarca.Font = new Font("Segoe UI", 14F);
+            nombreMarca.Location = new Point(14, 91);
+            nombreMarca.Name = "nombreMarca";
+            nombreMarca.Size = new Size(325, 32);
+            nombreMarca.TabIndex = 17;
             // 
             // btn_limpiar
             // 
@@ -190,22 +190,22 @@
             label2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             label2.Location = new Point(14, 41);
             label2.Name = "label2";
-            label2.Size = new Size(204, 25);
+            label2.Size = new Size(193, 25);
             label2.TabIndex = 2;
-            label2.Text = "Nombre de Categoría";
+            label2.Text = "Nombre de la Marca";
             // 
-            // AgregarCategoria
+            // AgregarMarcas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Teal;
             Controls.Add(panel2);
             Controls.Add(panel1);
-            Name = "AgregarCategoria";
+            Name = "AgregarMarcas";
             Size = new Size(1085, 665);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvCategorias).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvMarcas).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
@@ -215,18 +215,13 @@
 
         private Panel panel2;
         private Label label4;
-        private DataGridView dgvCategorias;
+        private DataGridView dgvMarcas;
         private Panel panel1;
-        private TextBox textBox4;
-        private Label label5;
-        private TextBox textBox3;
+        private TextBox nombreMarca;
         private Button btn_limpiar;
         private Button btn_eliminar;
         private Button btn_editar;
         private Button btn_agregar;
-        private Label label3;
-        private TextBox textBox2;
         private Label label2;
-        private TextBox nombreCategoria;
     }
 }

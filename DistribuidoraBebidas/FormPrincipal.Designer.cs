@@ -32,6 +32,7 @@
             btn_cerrar = new Button();
             label1 = new Label();
             panel2 = new Panel();
+            btnMarcas = new Button();
             btnClientes = new Button();
             button6 = new Button();
             panel4 = new Panel();
@@ -39,13 +40,15 @@
             button5 = new Button();
             btnCategorias = new Button();
             pictureBox1 = new PictureBox();
-            button3 = new Button();
+            btnProductos = new Button();
             btnUsuarios = new Button();
             btnInicio = new Button();
             adminUsuarios1 = new AdminUsuarios();
             panelAdmin1 = new PanelAdmin();
             adminAgregarClientes1 = new AdminAgregarClientes();
             agregarCategoria1 = new AgregarCategoria();
+            agregarProductos1 = new AgregarProductos();
+            agregarMarcas1 = new AgregarMarcas();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -92,6 +95,7 @@
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(0, 115, 209);
+            panel2.Controls.Add(btnMarcas);
             panel2.Controls.Add(btnClientes);
             panel2.Controls.Add(button6);
             panel2.Controls.Add(panel4);
@@ -99,7 +103,7 @@
             panel2.Controls.Add(button5);
             panel2.Controls.Add(btnCategorias);
             panel2.Controls.Add(pictureBox1);
-            panel2.Controls.Add(button3);
+            panel2.Controls.Add(btnProductos);
             panel2.Controls.Add(btnUsuarios);
             panel2.Controls.Add(btnInicio);
             panel2.Dock = DockStyle.Left;
@@ -107,6 +111,27 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(218, 665);
             panel2.TabIndex = 1;
+            // 
+            // btnMarcas
+            // 
+            btnMarcas.Cursor = Cursors.Hand;
+            btnMarcas.FlatAppearance.BorderSize = 0;
+            btnMarcas.FlatAppearance.MouseDownBackColor = Color.FromArgb(2, 100, 181);
+            btnMarcas.FlatAppearance.MouseOverBackColor = Color.FromArgb(2, 100, 181);
+            btnMarcas.FlatStyle = FlatStyle.Flat;
+            btnMarcas.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            btnMarcas.ForeColor = Color.White;
+            btnMarcas.Image = Properties.Resources.etiquetas1;
+            btnMarcas.ImageAlign = ContentAlignment.MiddleLeft;
+            btnMarcas.Location = new Point(0, 405);
+            btnMarcas.Name = "btnMarcas";
+            btnMarcas.Padding = new Padding(15, 0, 5, 0);
+            btnMarcas.Size = new Size(218, 49);
+            btnMarcas.TabIndex = 16;
+            btnMarcas.Text = "         Marcas";
+            btnMarcas.TextAlign = ContentAlignment.MiddleLeft;
+            btnMarcas.UseVisualStyleBackColor = true;
+            btnMarcas.Click += btnMarcas_Click;
             // 
             // btnClientes
             // 
@@ -119,7 +144,7 @@
             btnClientes.ForeColor = Color.White;
             btnClientes.Image = Properties.Resources.icono_clientes;
             btnClientes.ImageAlign = ContentAlignment.MiddleLeft;
-            btnClientes.Location = new Point(0, 251);
+            btnClientes.Location = new Point(0, 240);
             btnClientes.Name = "btnClientes";
             btnClientes.Padding = new Padding(15, 0, 5, 0);
             btnClientes.Size = new Size(218, 49);
@@ -140,7 +165,7 @@
             button6.ForeColor = Color.White;
             button6.Image = Properties.Resources.icono_ventaDetalle1;
             button6.ImageAlign = ContentAlignment.MiddleLeft;
-            button6.Location = new Point(0, 471);
+            button6.Location = new Point(0, 515);
             button6.Name = "button6";
             button6.Padding = new Padding(15, 0, 5, 0);
             button6.Size = new Size(218, 72);
@@ -188,7 +213,7 @@
             button5.ForeColor = Color.White;
             button5.Image = Properties.Resources.factura_punto_de_venta1;
             button5.ImageAlign = ContentAlignment.MiddleLeft;
-            button5.Location = new Point(3, 416);
+            button5.Location = new Point(3, 460);
             button5.Name = "button5";
             button5.Padding = new Padding(15, 0, 5, 0);
             button5.Size = new Size(215, 49);
@@ -208,7 +233,7 @@
             btnCategorias.ForeColor = Color.White;
             btnCategorias.Image = Properties.Resources.etiquetas1;
             btnCategorias.ImageAlign = ContentAlignment.MiddleLeft;
-            btnCategorias.Location = new Point(0, 361);
+            btnCategorias.Location = new Point(0, 350);
             btnCategorias.Name = "btnCategorias";
             btnCategorias.Padding = new Padding(15, 0, 5, 0);
             btnCategorias.Size = new Size(218, 49);
@@ -228,25 +253,26 @@
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
             // 
-            // button3
+            // btnProductos
             // 
-            button3.Cursor = Cursors.Hand;
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatAppearance.MouseDownBackColor = Color.FromArgb(2, 100, 181);
-            button3.FlatAppearance.MouseOverBackColor = Color.FromArgb(2, 100, 181);
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            button3.ForeColor = Color.White;
-            button3.Image = Properties.Resources.cajas;
-            button3.ImageAlign = ContentAlignment.MiddleLeft;
-            button3.Location = new Point(0, 306);
-            button3.Name = "button3";
-            button3.Padding = new Padding(15, 0, 5, 0);
-            button3.Size = new Size(218, 49);
-            button3.TabIndex = 4;
-            button3.Text = "         Productos";
-            button3.TextAlign = ContentAlignment.MiddleLeft;
-            button3.UseVisualStyleBackColor = true;
+            btnProductos.Cursor = Cursors.Hand;
+            btnProductos.FlatAppearance.BorderSize = 0;
+            btnProductos.FlatAppearance.MouseDownBackColor = Color.FromArgb(2, 100, 181);
+            btnProductos.FlatAppearance.MouseOverBackColor = Color.FromArgb(2, 100, 181);
+            btnProductos.FlatStyle = FlatStyle.Flat;
+            btnProductos.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            btnProductos.ForeColor = Color.White;
+            btnProductos.Image = Properties.Resources.cajas;
+            btnProductos.ImageAlign = ContentAlignment.MiddleLeft;
+            btnProductos.Location = new Point(0, 295);
+            btnProductos.Name = "btnProductos";
+            btnProductos.Padding = new Padding(15, 0, 5, 0);
+            btnProductos.Size = new Size(218, 49);
+            btnProductos.TabIndex = 4;
+            btnProductos.Text = "         Productos";
+            btnProductos.TextAlign = ContentAlignment.MiddleLeft;
+            btnProductos.UseVisualStyleBackColor = true;
+            btnProductos.Click += btnProductos_Click;
             // 
             // btnUsuarios
             // 
@@ -259,7 +285,7 @@
             btnUsuarios.ForeColor = Color.White;
             btnUsuarios.Image = Properties.Resources.usuarios;
             btnUsuarios.ImageAlign = ContentAlignment.MiddleLeft;
-            btnUsuarios.Location = new Point(0, 200);
+            btnUsuarios.Location = new Point(0, 189);
             btnUsuarios.Name = "btnUsuarios";
             btnUsuarios.Padding = new Padding(15, 0, 5, 0);
             btnUsuarios.Size = new Size(218, 49);
@@ -280,7 +306,7 @@
             btnInicio.ForeColor = Color.White;
             btnInicio.Image = Properties.Resources.icono_inicio;
             btnInicio.ImageAlign = ContentAlignment.MiddleLeft;
-            btnInicio.Location = new Point(0, 145);
+            btnInicio.Location = new Point(0, 134);
             btnInicio.Name = "btnInicio";
             btnInicio.Padding = new Padding(15, 0, 5, 0);
             btnInicio.Size = new Size(218, 49);
@@ -322,6 +348,21 @@
             agregarCategoria1.Size = new Size(1085, 665);
             agregarCategoria1.TabIndex = 9;
             // 
+            // agregarProductos1
+            // 
+            agregarProductos1.Location = new Point(217, 44);
+            agregarProductos1.Name = "agregarProductos1";
+            agregarProductos1.Size = new Size(1085, 665);
+            agregarProductos1.TabIndex = 9;
+            // 
+            // agregarMarcas1
+            // 
+            agregarMarcas1.BackColor = Color.Teal;
+            agregarMarcas1.Location = new Point(219, 45);
+            agregarMarcas1.Name = "agregarMarcas1";
+            agregarMarcas1.Size = new Size(1085, 665);
+            agregarMarcas1.TabIndex = 9;
+            // 
             // FormPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -333,6 +374,8 @@
             Controls.Add(adminUsuarios1);
             Controls.Add(adminAgregarClientes1);
             Controls.Add(agregarCategoria1);
+            Controls.Add(agregarProductos1);
+            Controls.Add(agregarMarcas1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormPrincipal";
             StartPosition = FormStartPosition.CenterScreen;
@@ -351,7 +394,7 @@
         private Label label1;
         private Button btn_cerrar;
         private Button btnInicio;
-        private Button button3;
+        private Button btnProductos;
         private Button btnUsuarios;
         private Button btn_cerrarSesion;
         private Button button5;
@@ -364,5 +407,8 @@
         private PanelAdmin panelAdmin1;
         private AdminAgregarClientes adminAgregarClientes1;
         private AgregarCategoria agregarCategoria1;
+        private AgregarProductos agregarProductos1;
+        private Button btnMarcas;
+        private AgregarMarcas agregarMarcas1;
     }
 }
