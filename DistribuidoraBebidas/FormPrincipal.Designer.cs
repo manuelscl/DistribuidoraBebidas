@@ -34,7 +34,7 @@
             panel2 = new Panel();
             btnMarcas = new Button();
             btnClientes = new Button();
-            button6 = new Button();
+            btnVentaDetalles = new Button();
             panel4 = new Panel();
             btn_cerrarSesion = new Button();
             btnVentas = new Button();
@@ -43,13 +43,14 @@
             btnProductos = new Button();
             btnUsuarios = new Button();
             btnInicio = new Button();
+            ventasDetalles1 = new VentasDetalles();
+            agregarVenta1 = new AgregarVenta();
+            agregarMarcas1 = new AgregarMarcas();
+            agregarCategoria1 = new AgregarCategoria();
+            agregarProductos1 = new AgregarProductos();
+            adminAgregarClientes1 = new AdminAgregarClientes();
             adminUsuarios1 = new AdminUsuarios();
             panelAdmin1 = new PanelAdmin();
-            adminAgregarClientes1 = new AdminAgregarClientes();
-            agregarCategoria1 = new AgregarCategoria();
-            agregarMarcas1 = new AgregarMarcas();
-            agregarProductos1 = new AgregarProductos();
-            agregarVenta1 = new AgregarVenta();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -98,7 +99,7 @@
             panel2.BackColor = Color.FromArgb(0, 115, 209);
             panel2.Controls.Add(btnMarcas);
             panel2.Controls.Add(btnClientes);
-            panel2.Controls.Add(button6);
+            panel2.Controls.Add(btnVentaDetalles);
             panel2.Controls.Add(panel4);
             panel2.Controls.Add(btn_cerrarSesion);
             panel2.Controls.Add(btnVentas);
@@ -155,25 +156,26 @@
             btnClientes.UseVisualStyleBackColor = true;
             btnClientes.Click += btnClientes_Click;
             // 
-            // button6
+            // btnVentaDetalles
             // 
-            button6.Cursor = Cursors.Hand;
-            button6.FlatAppearance.BorderSize = 0;
-            button6.FlatAppearance.MouseDownBackColor = Color.FromArgb(2, 100, 181);
-            button6.FlatAppearance.MouseOverBackColor = Color.FromArgb(2, 100, 181);
-            button6.FlatStyle = FlatStyle.Flat;
-            button6.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            button6.ForeColor = Color.White;
-            button6.Image = Properties.Resources.icono_ventaDetalle1;
-            button6.ImageAlign = ContentAlignment.MiddleLeft;
-            button6.Location = new Point(0, 515);
-            button6.Name = "button6";
-            button6.Padding = new Padding(15, 0, 5, 0);
-            button6.Size = new Size(218, 72);
-            button6.TabIndex = 14;
-            button6.Text = "         Detalles de                 Ventas";
-            button6.TextAlign = ContentAlignment.MiddleLeft;
-            button6.UseVisualStyleBackColor = true;
+            btnVentaDetalles.Cursor = Cursors.Hand;
+            btnVentaDetalles.FlatAppearance.BorderSize = 0;
+            btnVentaDetalles.FlatAppearance.MouseDownBackColor = Color.FromArgb(2, 100, 181);
+            btnVentaDetalles.FlatAppearance.MouseOverBackColor = Color.FromArgb(2, 100, 181);
+            btnVentaDetalles.FlatStyle = FlatStyle.Flat;
+            btnVentaDetalles.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            btnVentaDetalles.ForeColor = Color.White;
+            btnVentaDetalles.Image = Properties.Resources.icono_ventaDetalle1;
+            btnVentaDetalles.ImageAlign = ContentAlignment.MiddleLeft;
+            btnVentaDetalles.Location = new Point(0, 515);
+            btnVentaDetalles.Name = "btnVentaDetalles";
+            btnVentaDetalles.Padding = new Padding(15, 0, 5, 0);
+            btnVentaDetalles.Size = new Size(218, 72);
+            btnVentaDetalles.TabIndex = 14;
+            btnVentaDetalles.Text = "         Detalles de                 Ventas";
+            btnVentaDetalles.TextAlign = ContentAlignment.MiddleLeft;
+            btnVentaDetalles.UseVisualStyleBackColor = true;
+            btnVentaDetalles.Click += btnVentaDetalles_Click;
             // 
             // panel4
             // 
@@ -318,74 +320,82 @@
             btnInicio.UseVisualStyleBackColor = true;
             btnInicio.Click += btnInicio_Click;
             // 
-            // adminUsuarios1
+            // ventasDetalles1
             // 
-            adminUsuarios1.BackColor = Color.Teal;
-            adminUsuarios1.Location = new Point(217, 45);
-            adminUsuarios1.Name = "adminUsuarios1";
-            adminUsuarios1.Size = new Size(1085, 665);
-            adminUsuarios1.TabIndex = 2;
+            ventasDetalles1.Location = new Point(215, 45);
+            ventasDetalles1.Name = "ventasDetalles1";
+            ventasDetalles1.Size = new Size(1085, 665);
+            ventasDetalles1.TabIndex = 2;
             // 
-            // panelAdmin1
+            // agregarVenta1
             // 
-            panelAdmin1.Location = new Point(219, 45);
-            panelAdmin1.Name = "panelAdmin1";
-            panelAdmin1.Size = new Size(1085, 665);
-            panelAdmin1.TabIndex = 9;
+            agregarVenta1.Location = new Point(215, 45);
+            agregarVenta1.Name = "agregarVenta1";
+            agregarVenta1.Size = new Size(1085, 665);
+            agregarVenta1.TabIndex = 9;
+            // 
+            // agregarMarcas1
+            // 
+            agregarMarcas1.BackColor = Color.Teal;
+            agregarMarcas1.Location = new Point(215, 45);
+            agregarMarcas1.Name = "agregarMarcas1";
+            agregarMarcas1.Size = new Size(1085, 665);
+            agregarMarcas1.TabIndex = 9;
+            // 
+            // agregarCategoria1
+            // 
+            agregarCategoria1.BackColor = Color.Teal;
+            agregarCategoria1.Location = new Point(212, 44);
+            agregarCategoria1.Name = "agregarCategoria1";
+            agregarCategoria1.Size = new Size(1085, 665);
+            agregarCategoria1.TabIndex = 9;
+            // 
+            // agregarProductos1
+            // 
+            agregarProductos1.Location = new Point(215, 44);
+            agregarProductos1.Name = "agregarProductos1";
+            agregarProductos1.Size = new Size(1085, 665);
+            agregarProductos1.TabIndex = 9;
             // 
             // adminAgregarClientes1
             // 
             adminAgregarClientes1.BackColor = Color.Teal;
-            adminAgregarClientes1.Location = new Point(219, 45);
+            adminAgregarClientes1.Location = new Point(215, 44);
             adminAgregarClientes1.Margin = new Padding(2);
             adminAgregarClientes1.Name = "adminAgregarClientes1";
             adminAgregarClientes1.Size = new Size(1085, 665);
             adminAgregarClientes1.TabIndex = 9;
             // 
-            // agregarCategoria1
+            // adminUsuarios1
             // 
-            agregarCategoria1.BackColor = Color.Teal;
-            agregarCategoria1.Location = new Point(215, 45);
-            agregarCategoria1.Name = "agregarCategoria1";
-            agregarCategoria1.Size = new Size(1085, 665);
-            agregarCategoria1.TabIndex = 9;
+            adminUsuarios1.BackColor = Color.Teal;
+            adminUsuarios1.Location = new Point(215, 45);
+            adminUsuarios1.Name = "adminUsuarios1";
+            adminUsuarios1.Size = new Size(1085, 665);
+            adminUsuarios1.TabIndex = 9;
             // 
-            // agregarMarcas1
+            // panelAdmin1
             // 
-            agregarMarcas1.BackColor = Color.Teal;
-            agregarMarcas1.Location = new Point(219, 45);
-            agregarMarcas1.Name = "agregarMarcas1";
-            agregarMarcas1.Size = new Size(1085, 665);
-            agregarMarcas1.TabIndex = 9;
-            // 
-            // agregarProductos1
-            // 
-            agregarProductos1.Location = new Point(218, 44);
-            agregarProductos1.Name = "agregarProductos1";
-            agregarProductos1.Size = new Size(1085, 665);
-            agregarProductos1.TabIndex = 9;
-            // 
-            // agregarVenta1
-            // 
-            agregarVenta1.Location = new Point(218, 45);
-            agregarVenta1.Name = "agregarVenta1";
-            agregarVenta1.Size = new Size(1085, 665);
-            agregarVenta1.TabIndex = 9;
+            panelAdmin1.Location = new Point(214, 44);
+            panelAdmin1.Name = "panelAdmin1";
+            panelAdmin1.Size = new Size(1085, 665);
+            panelAdmin1.TabIndex = 9;
             // 
             // FormPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1300, 710);
-            Controls.Add(panel2);
-            Controls.Add(panel1);
             Controls.Add(panelAdmin1);
             Controls.Add(adminUsuarios1);
             Controls.Add(adminAgregarClientes1);
-            Controls.Add(agregarCategoria1);
             Controls.Add(agregarProductos1);
+            Controls.Add(agregarCategoria1);
             Controls.Add(agregarMarcas1);
             Controls.Add(agregarVenta1);
+            Controls.Add(ventasDetalles1);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormPrincipal";
             StartPosition = FormStartPosition.CenterScreen;
@@ -411,15 +421,16 @@
         private Button btnCategorias;
         private PictureBox pictureBox1;
         private Panel panel4;
-        private Button button6;
-        private AdminUsuarios adminUsuarios1;
+        private Button btnVentaDetalles;
         private Button btnClientes;
-        private PanelAdmin panelAdmin1;
-        private AdminAgregarClientes adminAgregarClientes1;
         private AgregarCategoria agregarCategoria1;
         private Button btnMarcas;
         private AgregarMarcas agregarMarcas1;
         private AgregarProductos agregarProductos1;
+        private VentasDetalles ventasDetalles1;
         private AgregarVenta agregarVenta1;
+        private AdminAgregarClientes adminAgregarClientes1;
+        private AdminUsuarios adminUsuarios1;
+        private PanelAdmin panelAdmin1;
     }
 }

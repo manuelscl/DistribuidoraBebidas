@@ -109,6 +109,18 @@ namespace DistribuidoraBebidas
             /*AgregarVenta form = agregarVenta1 as AgregarVenta;
             if (form != null) { form.CargarDatosTabla(); }*/
         }
+
+        private void btnVentaDetalles_Click(object sender, EventArgs e)
+        {
+            panelAdmin1.Visible = false;
+            adminUsuarios1.Visible = false;
+            adminAgregarClientes1.Visible = false;
+            agregarProductos1.Visible = false;
+            agregarCategoria1.Visible = false;
+            agregarMarcas1.Visible = false;
+            agregarVenta1.Visible = false;
+            ventasDetalles1.Visible = true;
+        }
     }
 
 }
