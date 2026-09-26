@@ -45,7 +45,7 @@
             label2 = new Label();
             label1 = new Label();
             pictureBox1 = new PictureBox();
-            dataGridView1 = new DataGridView();
+            dgvClientes = new DataGridView();
             panel6 = new Panel();
             label9 = new Label();
             panel1.SuspendLayout();
@@ -57,7 +57,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvClientes).BeginInit();
             panel6.SuspendLayout();
             SuspendLayout();
             // 
@@ -92,7 +92,7 @@
             label5.Name = "label5";
             label5.Size = new Size(92, 53);
             label5.TabIndex = 2;
-            label5.Text = "Todos los Clientes";
+            label5.Text = "Ingresos Totales";
             // 
             // label6
             // 
@@ -176,7 +176,7 @@
             label7.Name = "label7";
             label7.Size = new Size(92, 53);
             label7.TabIndex = 2;
-            label7.Text = "Todos los Usuarios";
+            label7.Text = "Ingresos de Hoy";
             // 
             // label8
             // 
@@ -241,20 +241,20 @@
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
-            // dataGridView1
+            // dgvClientes
             // 
-            dataGridView1.BackgroundColor = SystemColors.GradientActiveCaption;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(17, 56);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(1028, 312);
-            dataGridView1.TabIndex = 1;
+            dgvClientes.BackgroundColor = SystemColors.GradientActiveCaption;
+            dgvClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvClientes.Location = new Point(17, 56);
+            dgvClientes.Name = "dgvClientes";
+            dgvClientes.Size = new Size(1028, 312);
+            dgvClientes.TabIndex = 1;
             // 
             // panel6
             // 
             panel6.BackColor = Color.White;
             panel6.Controls.Add(label9);
-            panel6.Controls.Add(dataGridView1);
+            panel6.Controls.Add(dgvClientes);
             panel6.Location = new Point(11, 263);
             panel6.Name = "panel6";
             panel6.Size = new Size(1061, 390);
@@ -291,7 +291,7 @@
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvClientes).EndInit();
             panel6.ResumeLayout(false);
             panel6.PerformLayout();
             ResumeLayout(false);
@@ -316,7 +316,7 @@
         private Label label7;
         private Label label8;
         private PictureBox pictureBox4;
-        private DataGridView dataGridView1;
+        private DataGridView dgvClientes;
         private Panel panel6;
         private Label label9;
     }
